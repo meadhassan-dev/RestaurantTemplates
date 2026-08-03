@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Bangkok Bites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Mali:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark thai-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-pepper-hot"></i> Bangkok Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav13">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav13">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="page-hero-title">Our Menu</h1>
+      <p class="page-hero-subtitle">Authentic Thai flavors — bold, fresh, unforgettable.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-utensils text-purple"></i> Starters</h2>
+      <p class="text-center text-muted mb-5">Begin your Thai feast.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1582962754434-5e71e5e5c8a8?w=400" alt="Spring Rolls" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Spring Rolls</h5>
+              <p class="text-muted small">Crispy rolls, sweet chili dip, fresh herbs</p>
+              <span class="thai-price">$8.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400" alt="Satay" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Satay Skewers</h5>
+              <p class="text-muted small">Grilled chicken, peanut sauce, cucumber</p>
+              <span class="thai-price">$11.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1608032077018-c9aad9565a1f?w=400" alt="Fish Cakes" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Thai Fish Cakes</h5>
+              <p class="text-muted small">Red curry fish cakes, sweet chili sauce</p>
+              <span class="thai-price">$10.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?w=400" alt="Papaya Salad" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Som Tum</h5>
+              <p class="text-muted small">Green papaya salad, chili, lime, peanuts</p>
+              <span class="thai-price">$12.95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-fire text-purple"></i> Noodles & Rice</h2>
+      <p class="text-center text-muted mb-5">The heart of Thai street food.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400" alt="Pad Thai" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Pad Thai</h5>
+              <p class="text-muted small">Rice noodles, shrimp, tofu, peanuts, lime</p>
+              <span class="thai-price">$14.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1552611052-33e04de1b100?w=400" alt="Drunken Noodles" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Drunken Noodles</h5>
+              <p class="text-muted small">Flat rice noodles, basil, chili, vegetables</p>
+              <span class="thai-price">$15.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400" alt="Khao Pad" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Khao Pad</h5>
+              <p class="text-muted small">Thai fried rice, crab, pineapple, cashew</p>
+              <span class="thai-price">$13.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400" alt="Pad See Ew" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Pad See Ew</h5>
+              <p class="text-muted small">Stir-fried wide noodles, soy sauce, broccoli</p>
+              <span class="thai-price">$14.95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-soup text-purple"></i> Curries & Soups</h2>
+      <p class="text-center text-muted mb-5">Rich, aromatic, and deeply satisfying.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400" alt="Green Curry" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Green Curry</h5>
+              <p class="text-muted small">Chicken, bamboo shoots, basil, coconut milk</p>
+              <span class="thai-price">$16.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400" alt="Massaman" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Massaman Curry</h5>
+              <p class="text-muted small">Beef, potatoes, peanuts, mild spices</p>
+              <span class="thai-price">$17.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=400" alt="Tom Yum" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Tom Yum Goong</h5>
+              <p class="text-muted small">Shrimp, lemongrass, galangal, chili mushrooms</p>
+              <span class="thai-price">$15.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1604608683494-9b1b6e41aa4f?w=400" alt="Tom Kha" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Tom Kha Gai</h5>
+              <p class="text-muted small">Chicken coconut soup, galangal, lime</p>
+              <span class="thai-price">$14.95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-candy-cane text-purple"></i> Desserts</h2>
+      <p class="text-center text-muted mb-5">Sweet Thai endings.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Mango Sticky Rice" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Mango Sticky Rice</h5>
+              <p class="text-muted small">Sweet mango, glutinous rice, coconut cream</p>
+              <span class="thai-price">$9.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Coconut Ice Cream" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Coconut Ice Cream</h5>
+              <p class="text-muted small">Coconut milk ice cream, roasted peanuts</p>
+              <span class="thai-price">$7.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400" alt="Thai Tea Crepe" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Thai Tea Crepe Cake</h5>
+              <p class="text-muted small">Layered crepes with Thai tea cream</p>
+              <span class="thai-price">$11.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="thai-menu-card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400" alt="Banana Roti" class="thai-menu-img">
+            <div class="thai-menu-body">
+              <h5>Banana Roti</h5>
+              <p class="text-muted small">Crispy roti, banana, condensed milk, chocolate</p>
+              <span class="thai-price">$8.95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-pepper-hot text-hotpink"></i> Bangkok Bites</h5>
+          <p class="small text-muted">Authentic Thai street food, bold & fresh.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 88 Siam Ave, Los Angeles, CA</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (213) 555-0188</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> hello@bangkokbites.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Daily 11am - 10pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

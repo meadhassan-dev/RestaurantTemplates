@@ -1,0 +1,30 @@
+.page-hero {
+  background: linear-gradient(rgba(128, 0, 32, 0.85), rgba(128, 0, 32, 0.85)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600') center/cover no-repeat;
+  padding: 120px 0 80px;
+  color: var(--cream);
+}
+
+.page-hero h1 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.text-muted {
+  color: #888 !important;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+/* ============================================================
+   RESERVATION PAGE — editorial split layout
+   ============================================================ */
+.res-layout { align-items: flex-start; }
+.res-aside-edit { position: sticky; top: 112px; }
+.res-aside-edit .arch { margin-bottom: 26px; }
+
+.res-info-card {
+  display: flex; gap: 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 18px; padding: 16px 20px; margin-bottom: 14px;
+  transition: transform .4s var(--ease), box-shadow .4s;
+}
+.res-info-card:hover { transform: translateX(6px); box-shadow: 0 14px 30px rgba(24,62,46,.1); }
+.res-info-card i {
+  width: 46px; height: 46px; flex-shrink: 0; border-radius: 50%;
+  background: var(--emerald-soft); color: var(--emerald);
+  display: flex; align-items: center; justify-content: center; font-size: 1.05rem;
+}
+.res-info-card h6 { font-family: var(--sans); font-size: .64rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; font-weight: 600; }
+.res-info-card p { margin: 0; font-size: .94rem; color: var(--ink); }
+
+.form-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 26px; padding: 44px 46px;
+  box-shadow: 0 24px 60px rgba(24,62,46,.1);
+}
+.form-card .form-title { font-size: 1.7rem; font-style: italic; margin-bottom: 4px; }
+.form-card .form-sub { color: var(--muted); margin-bottom: 30px; }
+
+.guest-picker { display: flex; align-items: center; gap: 14px; }
+.guest-picker button {
+  width: 42px; height: 42px; border-radius: 50%;
+  border: 1.5px solid var(--line-strong); background: var(--white);
+  color: var(--emerald); transition: all .3s var(--ease);
+}
+.guest-picker button:hover { background: var(--emerald); color: var(--white); border-color: var(--emerald); transform: translateY(-2px); }
+.guest-picker .gp-value { font-family: var(--serif); font-size: 1.7rem; font-style: italic; color: var(--ink); min-width: 48px; text-align: center; }
+
+@media (max-width: 991px) {
+  .res-aside-edit { position: static; }
+  .form-card { padding: 32px 26px; }
+}

@@ -1,0 +1,66 @@
+.page-hero-gallery-sushi {
+  background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600') center/cover no-repeat;
+  padding: 180px 0 100px;
+  color: var(--white);
+}
+
+.page-hero-gallery-sushi h1 {
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+
+.page-hero-gallery-sushi p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.gallery-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item::after {
+  content: '+';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 127, 80, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .page-hero-gallery-sushi {
+    padding: 150px 0 70px;
+  }
+  .page-hero-gallery-sushi h1 {
+    font-size: 3.5rem;
+  }
+  .gallery-item img {
+    height: 200px;
+  }
+}

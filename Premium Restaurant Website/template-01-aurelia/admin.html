@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — AURELIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-topbar">
+    <a class="navbar-brand" href="index.html">AUR<span>E</span>LIA</a>
+    <div class="d-flex align-items-center gap-3">
+      <a class="view-site" href="index.html"><i class="fas fa-external-link-alt"></i> View Site</a>
+    </div>
+  </div>
+
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div class="sidebar-brand">AUR<span>E</span>LIA</div>
+      <a class="sidebar-link active" data-tab="overview"><i class="fas fa-th-large"></i> Overview</a>
+      <a class="sidebar-link" data-tab="orders"><i class="fas fa-shopping-bag"></i> Orders</a>
+      <a class="sidebar-link" data-tab="menu"><i class="fas fa-utensils"></i> Menu</a>
+      <a class="sidebar-link" data-tab="reservations"><i class="fas fa-calendar-check"></i> Reservations</a>
+      <a class="sidebar-link" data-tab="messages"><i class="fas fa-envelope-open-text"></i> Messages</a>
+      <a class="sidebar-link" data-tab="report"><i class="fas fa-chart-line"></i> Reports</a>
+      <div class="sidebar-footer">
+        <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Site</a>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+
+      <!-- OVERVIEW -->
+      <section class="admin-tab active" id="tab-overview">
+        <h1 class="admin-title">Good evening, Manager</h1>
+        <p class="admin-sub">Here is what's happening at AURELIA tonight.</p>
+        <div class="row g-4 mt-2 mb-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="sc-icon" style="background:rgba(201,169,110,.14);color:var(--gold);"><i class="fas fa-shopping-bag"></i></div>
+              <div><div class="sc-value" id="todayOrders">0</div><div class="sc-label">Today's Orders</div></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="sc-icon" style="background:rgba(40,167,69,.14);color:#28A745;"><i class="fas fa-dollar-sign"></i></div>
+              <div><div class="sc-value" id="todaySales">$0</div><div class="sc-label">Today's Sales</div></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="sc-icon" style="background:rgba(255,193,7,.14);color:#FFC107;"><i class="fas fa-calendar-week"></i></div>
+              <div><div class="sc-value" id="weekSales">$0</div><div class="sc-label">This Week</div></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="sc-icon" style="background:rgba(23,162,184,.14);color:#17A2B8;"><i class="fas fa-coins"></i></div>
+              <div><div class="sc-value" id="totalSales">$0</div><div class="sc-label">Lifetime Sales</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="admin-card">
+              <div class="card-head"><h5><i class="fas fa-list-alt me-2"></i>Recent Orders</h5></div>
+              <div class="table-responsive">
+                <table class="table-lux">
+                  <thead><tr><th>Order</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Time</th></tr></thead>
+                  <tbody id="recentOrdersTable"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="admin-card">
+              <div class="card-head"><h5><i class="fas fa-fire me-2"></i>Popular Items</h5></div>
+              <div id="popularItems"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ORDERS -->
+      <section class="admin-tab" id="tab-orders">
+        <h1 class="admin-title">Orders</h1>
+        <p class="admin-sub">Manage incoming and active orders.</p>
+        <div class="admin-card mt-4">
+          <div class="card-head">
+            <h5><i class="fas fa-list me-2"></i>All Orders</h5>
+            <select class="st-select" id="orderFilter">
+              <option value="all">All Statuses</option>
+              <option value="pending">Pending</option>
+              <option value="preparing">Preparing</option>
+              <option value="delivered">Delivered</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+          </div>
+          <div class="table-responsive">
+            <table class="table-lux">
+              <thead><tr><th>Order</th><th>Customer</th><th>Phone</th><th>Items</th><th>Total</th><th>Payment</th><th>Status</th><th>Time</th><th>Action</th></tr></thead>
+              <tbody id="allOrdersTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- MENU -->
+      <section class="admin-tab" id="tab-menu">
+        <h1 class="admin-title">Menu Management</h1>
+        <p class="admin-sub">Add, edit and curate the à la carte selection.</p>
+        <div class="row g-4 mt-2">
+          <div class="col-lg-4">
+            <div class="admin-card">
+              <div class="card-head"><h5 id="itemFormTitle"><i class="fas fa-plus-circle me-2"></i>Add Menu Item</h5></div>
+              <form id="addItemForm" class="admin-form">
+                <div class="mb-3"><label class="form-label">Item Name</label><input type="text" class="form-control" id="itemName" required></div>
+                <div class="mb-3"><label class="form-label">Category</label>
+                  <select class="form-select" id="itemCategory" required>
+                    <option value="">Select</option>
+                    <option value="starters">Starters</option>
+                    <option value="mains">Main Courses</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="desserts">Desserts</option>
+                    <option value="drinks">Drinks</option>
+                  </select>
+                </div>
+                <div class="mb-3"><label class="form-label">Price ($)</label><input type="number" class="form-control" id="itemPrice" step="0.01" min="0" required></div>
+                <div class="mb-3"><label class="form-label">Tag (optional)</label><input type="text" class="form-control" id="itemTag" placeholder="Signature, New..."></div>
+                <div class="mb-3"><label class="form-label">Description</label><textarea class="form-control" id="itemDescription" rows="3" required></textarea></div>
+                <div class="mb-3"><label class="form-label">Image URL</label><input type="url" class="form-control" id="itemImage" placeholder="https://..."></div>
+                <button type="submit" class="btn-gold w-100" id="itemFormSubmit"><i class="fas fa-plus me-2"></i> Add Item</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="admin-card">
+              <div class="card-head"><h5><i class="fas fa-edit me-2"></i>Menu Items</h5></div>
+              <div class="table-responsive">
+                <table class="table-lux">
+                  <thead><tr><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Tag</th><th>Actions</th></tr></thead>
+                  <tbody id="menuItemsTable"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESERVATIONS -->
+      <section class="admin-tab" id="tab-reservations">
+        <h1 class="admin-title">Reservations</h1>
+        <p class="admin-sub">Confirm and manage table bookings.</p>
+        <div class="admin-card mt-4">
+          <div class="card-head"><h5><i class="fas fa-calendar-check me-2"></i>Incoming Bookings</h5></div>
+          <div class="table-responsive">
+            <table class="table-lux">
+              <thead><tr><th>Ref</th><th>Guest</th><th>Guests</th><th>Date · Time</th><th>Occasion</th><th>Requested</th><th>Status</th></tr></thead>
+              <tbody id="reservationsTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- MESSAGES -->
+      <section class="admin-tab" id="tab-messages">
+        <h1 class="admin-title">Messages</h1>
+        <p class="admin-sub">Enquiries received from the contact form.</p>
+        <div class="admin-card mt-4">
+          <div class="card-head"><h5><i class="fas fa-envelope-open-text me-2"></i>Inbox</h5></div>
+          <div class="table-responsive">
+            <table class="table-lux">
+              <thead><tr><th>Ref</th><th>Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Received</th></tr></thead>
+              <tbody id="messagesTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section class="admin-tab" id="tab-report">
+        <h1 class="admin-title">Reports</h1>
+        <p class="admin-sub">Sales performance at a glance.</p>
+        <div class="row g-4 mt-2 mb-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card"><div class="sc-icon" style="background:rgba(201,169,110,.14);color:var(--gold);"><i class="fas fa-dollar-sign"></i></div><div><div class="sc-value" id="reportTodaySales">$0</div><div class="sc-label">Today</div></div></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card"><div class="sc-icon" style="background:rgba(255,193,7,.14);color:#FFC107;"><i class="fas fa-hashtag"></i></div><div><div class="sc-value" id="reportTodayOrders">0</div><div class="sc-label">Today's Orders</div></div></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card"><div class="sc-icon" style="background:rgba(40,167,69,.14);color:#28A745;"><i class="fas fa-calendar-week"></i></div><div><div class="sc-value" id="reportWeekSales">$0</div><div class="sc-label">This Week</div></div></div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card"><div class="sc-icon" style="background:rgba(23,162,184,.14);color:#17A2B8;"><i class="fas fa-chart-pie"></i></div><div><div class="sc-value" id="reportTotalSales">$0</div><div class="sc-label">All Time</div></div></div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="admin-card">
+              <div class="card-head"><h5><i class="fas fa-chart-bar me-2"></i>Weekly Sales</h5></div>
+              <div class="chart-box"><canvas id="salesChart"></canvas></div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="admin-card">
+              <div class="card-head"><h5><i class="fas fa-chart-line me-2"></i>Last 7 Days</h5></div>
+              <div class="chart-box"><canvas id="dailySalesChart"></canvas></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

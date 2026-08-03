@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #111;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+}
+
+.navbar-chinese {
+  background: #111 !important;
+  padding: 0.8rem 0;
+  border-bottom: 3px solid #CC0000;
+}
+
+.navbar-chinese .navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: #FFD700 !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-chinese .navbar-brand span {
+  color: #CC0000;
+}
+
+.navbar-chinese .nav-link {
+  color: #fff !important;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s;
+}
+
+.navbar-chinese .nav-link:hover {
+  color: #FFD700 !important;
+}
+
+.hero-chinese {
+  background: linear-gradient(135deg, #111 0%, #8B0000 50%, #111 100%);
+  padding: 120px 0 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-chinese::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.hero-chinese h1 {
+  font-size: 5rem;
+  color: #FFD700;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  letter-spacing: 8px;
+  position: relative;
+}
+
+.hero-chinese h1 span {
+  color: #CC0000;
+}
+
+.hero-chinese .tagline {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 15px 0 30px;
+  position: relative;
+}
+
+.hero-chinese .divider {
+  width: 80px;
+  height: 3px;
+  background: #FFD700;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.hero-chinese .btn-danger {
+  background: #CC0000;
+  border: 2px solid #FFD700;
+  padding: 12px 40px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hero-chinese .btn-danger:hover {
+  background: #8B0000;
+  border-color: #FFD700;
+  transform: scale(1.05);
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8B0000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: #CC0000;
+  margin: 0 auto 40px;
+}
+
+.about-chinese {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.about-chinese img {
+  border: 5px solid #111;
+  width: 100%;
+}
+
+.about-chinese h3 {
+  color: #8B0000;
+  font-size: 1.8rem;
+}
+
+.menu-chinese {
+  padding: 80px 0;
+  background: #f9f5f0;
+}
+
+.nav-tabs .nav-link {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: #8B0000;
+  border: none;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-tabs .nav-link.active {
+  background: #CC0000;
+  color: #FFD700;
+  border-radius: 0;
+}
+
+.menu-card {
+  background: #fff;
+  border: 1px solid #e0d5c0;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.menu-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card-body {
+  padding: 20px;
+}
+
+.menu-card-body h5 {
+  color: #8B0000;
+  font-size: 1.2rem;
+}
+
+.menu-card-body .price {
+  font-family: 'Cinzel', serif;
+  color: #CC0000;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.menu-card-body p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.gallery-chinese {
+  padding: 80px 0;
+  background: #111;
+}
+
+.gallery-chinese .section-title {
+  color: #FFD700;
+}
+
+.gallery-chinese .section-subtitle {
+  color: #ccc;
+}
+
+.gallery-chinese .section-divider {
+  background: #FFD700;
+}
+
+.gallery-img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-img:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay i {
+  color: #FFD700;
+  font-size: 2rem;
+}
+
+.chef-chinese {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.chef-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.chef-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #CC0000;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.chef-card h5 {
+  color: #8B0000;
+  font-family: 'Cinzel', serif;
+}
+
+.chef-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.testimonials-chinese {
+  padding: 80px 0;
+  background: #8B0000;
+  color: #fff;
+}
+
+.testimonials-chinese .section-title {
+  color: #FFD700;
+}
+
+.testimonials-chinese .section-subtitle {
+  color: #f0d0d0;
+}
+
+.testimonials-chinese .section-divider {
+  background: #FFD700;
+}
+
+.testimonial-card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255,215,0,0.3);
+}
+
+.testimonial-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #FFD700;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .stars {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.testimonial-card h6 {
+  color: #FFD700;
+  font-family: 'Cinzel', serif;
+  margin-top: 10px;
+}
+
+.contact-chinese {
+  padding: 80px 0;
+  background: #f9f5f0;
+}
+
+.contact-chinese form {
+  background: #fff;
+  padding: 40px;
+  border: 1px solid #e0d5c0;
+}
+
+.contact-chinese .form-control {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.contact-chinese .form-control:focus {
+  border-color: #CC0000;
+  box-shadow: none;
+}
+
+.contact-chinese .btn-submit {
+  background: #CC0000;
+  color: #FFD700;
+  border: 2px solid #8B0000;
+  padding: 12px 40px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0;
+  width: 100%;
+}
+
+.contact-chinese .btn-submit:hover {
+  background: #8B0000;
+}
+
+.footer-chinese {
+  background: #111;
+  color: #ccc;
+  padding: 60px 0 30px;
+  border-top: 3px solid #CC0000;
+}
+
+.footer-chinese h5 {
+  color: #FFD700;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+}
+
+.footer-chinese a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-chinese a:hover {
+  color: #FFD700;
+}
+
+.footer-chinese .social i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+.footer-chinese .social i:hover {
+  color: #FFD700;
+  transform: scale(1.2);
+}
+
+.footer-chinese .copyright {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.chef-chinese .chef-social a {
+  color: #8B0000;
+  margin: 0 5px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-chinese h1 {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+  }
+  .hero-chinese .tagline {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .contact-chinese form {
+    padding: 20px;
+  }
+}

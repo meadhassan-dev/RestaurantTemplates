@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu — NOCTURNE</title>
+  <meta name="description" content="Explore the NOCTURNE menu — modern fire-led cuisine, rare cellar and midnight desserts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">NOCT<span>U</span>RNE</div>
+    <div class="pl-diamond"><i class="fas fa-gem"></i></div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg noc-nav solid" id="nocNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NOCT<span>U</span>RNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nocNavbar" aria-controls="nocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nocNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="page-hero-noc">
+    <div class="container">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <div class="ph-breadcrumb reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Our Menu</span></div>
+          <h1 class="ph-title reveal delay-1">A study in <span class="script">contrast</span></h1>
+          <p class="ph-sub reveal delay-2">Fire, acid, salt and smoke — our menu is written by the embers of a live-fire pass and the seasons of the Great Lakes region.</p>
+          <div class="ph-badge reveal delay-3">
+            <span class="pb-num">À la carte</span>
+            <span class="pb-note">updated with the seasons</span>
+          </div>
+        </div>
+        <div class="ph-media reveal-right">
+          <div class="ph-frame"></div>
+          <div class="ph-photo" data-parallax>
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1000&q=80" alt="NOCTURNE signature dish">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-end mb-2 g-4">
+        <div class="col-lg-7">
+          <div class="section-eyebrow reveal">The Table d'Hôte</div>
+          <h2 class="section-title reveal">Degustation <span class="script">menu</span></h2>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <span class="script reveal" style="font-size:2rem;color:var(--magenta-soft);">$185 · seven courses</span>
+        </div>
+      </div>
+
+      <div class="accordion accordion-noc mt-4" id="tastingAcc">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#taste1" aria-expanded="false">01 · Opening Stanzas <span class="ac-price">$185</span></button>
+          </h2>
+          <div id="taste1" class="accordion-collapse collapse" data-bs-parent="#tastingAcc">
+            <div class="accordion-body">
+              <p><strong>Razor Clam</strong> — smoked tofu, sudachi, black garlic; <strong>Foie Gras Torchon</strong> — sour cherry, brioche, espelette; <strong>Golden Oyster</strong> — crème fraîche, caviar, chive.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taste2" aria-expanded="false">02 · The Fire <span class="ac-price">Theatre</span></button>
+          </h2>
+          <div id="taste2" class="accordion-collapse collapse" data-bs-parent="#tastingAcc">
+            <div class="accordion-body">
+              <p><strong>Ember-Roasted Oysters</strong> — celery, chive beurre blanc; <strong>Smoked Trout Tartare</strong> — horseradish cream, dill oil; <strong>Charred Shishito</strong> — miso, furikake, lime.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taste3" aria-expanded="false">03 · The Main <span class="ac-price">Course</span></button>
+          </h2>
+          <div id="taste3" class="accordion-collapse collapse" data-bs-parent="#tastingAcc">
+            <div class="accordion-body">
+              <p><strong>Wagyu Filet</strong> — bone marrow bordelaise, pomme purée; <strong>Coal-Roasted Rack of Lamb</strong> — harissa, smoked aubergine, pomegranate; <strong>Wild Mushroom Risotto</strong> — mascarpone, black truffle, aged parmesan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#taste4" aria-expanded="false">04 · The Finale <span class="ac-price">Dessert</span></button>
+          </h2>
+          <div id="taste4" class="accordion-collapse collapse" data-bs-parent="#tastingAcc">
+            <div class="accordion-body">
+              <p><strong>Midnight Chocolate</strong> — dark cocoa soil, salted caramel, espresso snow; <strong>Burnt Vanilla Cheesecake</strong> — berries, crème anglaise; petit fours & single-origin coffee.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal">
+        <a href="reservation.html" class="btn-noc">Reserve the Table <i class="fas fa-utensils"></i></a>
+        <span class="d-block mt-3" style="color:var(--muted);font-size:.85rem;">Vegan tasting available · advance notice of 48 hours</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- À la carte -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="section-eyebrow reveal">À la carte</div>
+      <h2 class="section-title reveal">Dine from <span class="script">the fire</span></h2>
+      <p class="section-subtitle reveal">Every plate is composed to be shared, passed and argued over — the way good dinners should be.</p>
+
+      <div class="menu-tabs reveal" id="menuTabs">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="starters">Starters</button>
+        <button data-filter="mains">Mains</button>
+        <button data-filter="vegetarian">Vegetarian</button>
+        <button data-filter="desserts">Desserts</button>
+        <button data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-container" id="menuContainer">
+        <!-- dishes rendered by JS from MENU data -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Notes -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="section-eyebrow reveal">Good to Know</div>
+      <h2 class="section-title reveal">Served with <span class="script">consideration</span></h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="menu-note reveal">
+            <i class="fas fa-wheat-awn-circle-exclamation"></i>
+            <div>
+              <h5>Allergies & Intolerances</h5>
+              <p>Please inform us of any allergies before ordering. Our kitchen is happy to adapt with 24 hours' notice.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="menu-note reveal delay-1">
+            <i class="fas fa-wine-glass"></i>
+            <div>
+              <h5>Pairing Suggestion</h5>
+              <p>Ask our sommeliers for wine pairings — every dish has a match hidden somewhere in our 1,200-label cellar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="menu-note reveal delay-2">
+            <i class="fas fa-seedling"></i>
+            <div>
+              <h5>Vegetarian & Vegan</h5>
+              <p>A dedicated plant-based menu is available on request. The tasting menu can be served fully vegan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="cta-panel-noc reveal-scale">
+        <div class="section-eyebrow reveal" style="justify-content:center;">Craving it now?</div>
+        <h2 class="cta-title-noc reveal">Take <span class="script">NOCTURNE</span> home</h2>
+        <p class="cta-sub reveal delay-1">Our full menu, plated and packed, delivered to your door.</p>
+        <div class="cta-actions-noc reveal delay-2">
+          <a href="order.html" class="btn-noc">Order Online <i class="fas fa-bag-shopping"></i></a>
+          <a href="gallery.html" class="btn-outline-noc">View the Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-noc">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">NOCT<span>U</span>RNE</div>
+          <p class="mt-3">Modern gastronomy after dark. An evening at NOCTURNE is an immersion into flavour, light and midnight glamour.</p>
+          <div class="social-f-noc mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 88 Wabash Avenue, Chicago, IL 60611</li>
+            <li><i class="fas fa-phone-alt"></i> (312) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@nocturne.dining</li>
+            <li><i class="fas fa-clock"></i> Wed–Sun · 5:30pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon – Tue · Closed</li>
+            <li>Wed – Thu · 5:30pm – 11:30pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 5:00pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Nocturne Dining. Crafted by OrbonTech.</p>
+        <p class="text-grad-noc"><i class="fas fa-gem" style="font-size:.6rem;"></i> Bon Appétit</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

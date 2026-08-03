@@ -1,0 +1,33 @@
+/* ============================================================
+   CONTACT PAGE — editorial cards + split form/map
+   ============================================================ */
+.contact-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 24px; padding: 32px 28px; height: 100%;
+  text-align: center; transition: transform .5s var(--ease), box-shadow .5s;
+}
+.contact-card:hover { transform: translateY(-6px) rotate(-.5deg); box-shadow: 0 20px 44px rgba(24,62,46,.12); }
+.contact-card i {
+  font-size: 1.6rem; color: var(--emerald); background: var(--emerald-soft);
+  width: 62px; height: 62px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; margin: 0 auto 18px;
+}
+.contact-card h5 { font-size: 1.15rem; font-style: italic; margin-bottom: 10px; }
+.contact-card p { color: var(--muted); font-size: .9rem; margin: 0; line-height: 1.7; }
+
+.contact-form-card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 26px; padding: 44px 46px;
+  box-shadow: 0 24px 60px rgba(24,62,46,.1);
+}
+
+.contact-aside { position: sticky; top: 112px; display: flex; flex-direction: column; gap: 22px; }
+.map-lux {
+  border-radius: 26px; border: 1px solid var(--line); width: 100%; min-height: 320px;
+  filter: saturate(.88) contrast(1.02); box-shadow: 0 18px 44px rgba(24,62,46,.12);
+}
+
+@media (max-width: 991px) {
+  .contact-form-card { padding: 32px 26px; }
+  .contact-aside { position: static; }
+}

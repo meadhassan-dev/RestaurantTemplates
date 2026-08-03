@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online - Burger Republic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+  <section class="page-hero-order-burger">
+    <div class="container text-center">
+      <h1 class="display-1 fw-bold">Order Online</h1>
+      <p class="fs-4">Burgers delivered to your door</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="filter-bar text-center mb-5">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="burgers">Burgers</button>
+        <button class="filter-btn" data-category="sides">Sides</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+      </div>
+
+      <div class="row g-4" id="menuGrid">
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="burgers">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Classic Burger">
+            <div class="order-card-burger-body">
+              <h5>Classic Burger</h5>
+              <p class="small">Angus beef, cheddar, lettuce, tomato, special sauce</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$9</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Classic Burger', 9, 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="burgers">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400" alt="Bacon Cheeseburger">
+            <div class="order-card-burger-body">
+              <h5>Bacon Cheeseburger</h5>
+              <p class="small">Double beef, crispy bacon, smoked gouda, onion rings</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$11</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Bacon Cheeseburger', 11, 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="burgers">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400" alt="BBQ Burger">
+            <div class="order-card-burger-body">
+              <h5>BBQ Burger</h5>
+              <p class="small">Smoky BBQ sauce, crispy onions, cheddar, bacon</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$12</span>
+                <button class="btn btn-add-cart" onclick="addToCart('BBQ Burger', 12, 'https://images.unsplash.com/photo-1586816001966-79b736744398?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="burgers">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400" alt="Chicken Burger">
+            <div class="order-card-burger-body">
+              <h5>Chicken Burger</h5>
+              <p class="small">Crispy chicken, coleslaw, pickles, spicy mayo</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$10</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Chicken Burger', 10, 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="sides">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400" alt="Loaded Fries">
+            <div class="order-card-burger-body">
+              <h5>Loaded Fries</h5>
+              <p class="small">Crispy fries topped with cheese, bacon & jalapeños</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$7</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Loaded Fries', 7, 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="sides">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?w=400" alt="Onion Rings">
+            <div class="order-card-burger-body">
+              <h5>Onion Rings</h5>
+              <p class="small">Beer-battered rings with chipotle ranch</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$6</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Onion Rings', 6, 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400" alt="Milkshake">
+            <div class="order-card-burger-body">
+              <h5>Milkshake</h5>
+              <p class="small">Chocolate, vanilla, strawberry or Oreo</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$8</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Milkshake', 8, 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400" alt="Cola">
+            <div class="order-card-burger-body">
+              <h5>Cola</h5>
+              <p class="small">Ice-cold fountain cola — unlimited refills</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$3</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Cola', 3, 'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400" alt="Chocolate Cake">
+            <div class="order-card-burger-body">
+              <h5>Chocolate Cake</h5>
+              <p class="small">Rich triple-layer chocolate fudge cake</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$9</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Chocolate Cake', 9, 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="sides">
+          <div class="order-card-burger">
+            <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400" alt="Nuggets">
+            <div class="order-card-burger-body">
+              <h5>Nuggets</h5>
+              <p class="small">Crispy chicken nuggets with honey mustard (8 pcs)</p>
+              <div class="order-card-bottom">
+                <span class="order-price-burger">$8</span>
+                <button class="btn btn-add-cart" onclick="addToCart('Nuggets', 8, 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400')">
+                  <i class="fas fa-plus"></i> Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <a href="cart.html" class="floating-cart" id="floatingCart" style="display:none;">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="floating-count" id="floatingCount">0</span>
+  </a>
+
+  <footer class="footer-burger">
+    <div class="container text-center">
+      <div class="social-burger mb-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-yelp"></i></a>
+      </div>
+      <p class="mb-0 small">742 Burger Avenue, Los Angeles, CA 90017 | (213) 555-0198</p>
+      <p class="mb-0 small">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <nav class="bottom-nav">
+    <div class="container">
+      <div class="bottom-nav-links">
+        <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="menu.html"><i class="fas fa-hamburger"></i><span>Menu</span></a>
+        <a href="order.html" class="active-link"><i class="fas fa-shopping-bag"></i><span>Order</span></a>
+        <a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span id="cartCount">0</span></a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

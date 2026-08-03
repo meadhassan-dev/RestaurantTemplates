@@ -1,0 +1,226 @@
+:root {
+  --red: #E53935;
+  --green: #388E3C;
+  --white: #FFFFFF;
+  --gold: #FFD700;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.text-gold { color: var(--gold); }
+.text-red { color: var(--red); }
+.bg-red { background: var(--red); }
+.text-white { color: var(--white); }
+
+.section-padding { padding: 100px 0; }
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #111;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.btn-gold:hover { background: #FFC107; color: #111; transform: translateY(-2px); }
+
+.btn-red-custom {
+  background: var(--red);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-family: 'Fredoka One', cursive;
+  transition: all 0.3s;
+}
+
+.btn-red-custom:hover { background: #C62828; color: var(--white); transform: translateY(-2px); }
+
+.top-bar {
+  background: #1a1a1a;
+  color: rgba(255,255,255,0.8);
+  padding: 8px 0;
+  font-size: 0.85rem;
+}
+
+.top-social a {
+  color: rgba(255,255,255,0.7);
+  margin-left: 12px;
+  transition: color 0.3s;
+}
+
+.top-social a:hover { color: var(--gold); }
+
+.pizza-nav {
+  background: var(--white);
+  border-bottom: 3px solid var(--red);
+  padding: 12px 0;
+}
+
+.pizza-nav .navbar-brand {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.6rem;
+  color: var(--red);
+}
+
+.pizza-nav .nav-link {
+  color: #333;
+  font-family: 'Fredoka One', cursive;
+  margin: 0 12px;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.pizza-nav .nav-link:hover { color: var(--red); }
+
+.hero-full {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600') center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 5.5rem;
+  color: var(--white);
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.9);
+  margin: 20px 0 35px;
+}
+
+.hero-divider {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.pizza-card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.pizza-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.signature-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  background: var(--gold);
+  color: #111;
+  font-family: 'Fredoka One', cursive;
+  font-size: 0.75rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.pizza-img { width: 100%; height: 220px; object-fit: cover; }
+
+.pizza-card-body { padding: 20px; }
+
+.pizza-card h4 { font-family: 'Fredoka One', cursive; font-size: 1.2rem; margin-bottom: 8px; }
+
+.pizza-price {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.3rem;
+  color: var(--red);
+}
+
+.chef-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--red);
+}
+
+.review-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  height: 100%;
+}
+
+.stars { color: var(--gold); }
+
+.reviewer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.order-phone {
+  background: rgba(255,255,255,0.1);
+  border: 2px dashed var(--gold);
+  border-radius: 20px;
+  padding: 30px;
+  display: inline-block;
+}
+
+.phone-number {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  color: var(--gold);
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 12px 20px;
+  border: 2px solid #eee;
+}
+
+.form-control:focus { border-color: var(--red); box-shadow: none; }
+.form-select { border-radius: 25px; }
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 8px;
+  transition: background 0.3s;
+}
+
+.social-links a:hover { background: var(--gold); color: #111; }
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 3rem; }
+  .phone-number { font-size: 1.8rem; }
+  .section-title { font-size: 2rem; }
+  .section-padding { padding: 60px 0; }
+}

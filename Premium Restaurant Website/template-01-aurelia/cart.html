@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Table — AURELIA Cart</title>
+  <meta name="description" content="Review your AURELIA order before checkout.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">AUR<span>E</span>LIA</div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg lux-nav scrolled" id="luxNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AUR<span>E</span>LIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxNavbar" aria-controls="luxNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="luxNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&q=80');">
+    <div class="container">
+      <div class="breadcrumb-lux reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><a href="order.html">Order</a><i class="fas fa-chevron-right"></i><span>Your Table</span></div>
+      <h1 class="page-hero-title reveal delay-1">Your <span class="text-gold">Table</span></h1>
+    </div>
+    <div class="hero-fade"></div>
+  </header>
+
+  <section class="section-padding-lux bg-black">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 style="font-size:1.8rem;">Order Summary</h2>
+            <button class="btn-ghost" onclick="clearCart()"><i class="fas fa-trash-alt"></i> Clear All</button>
+          </div>
+          <div id="cartItems" class="cart-items-wrap"></div>
+          <div class="empty-state d-none" id="emptyCart">
+            <i class="fas fa-shopping-bag"></i>
+            <h3>Your table is empty</h3>
+            <p>Add a few dishes from our à la carte menu.</p>
+            <a href="order.html" class="btn-gold mt-3">Browse the Menu <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="summary-lux reveal">
+            <h4>Summary</h4>
+            <div class="sum-line"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+            <div class="sum-line"><span>Tax (8.875%)</span><span id="cartTax">$0.00</span></div>
+            <div class="sum-line"><span>Delivery</span><span id="cartDelivery">$9.50</span></div>
+            <div class="sum-line total"><span><strong>Total</strong></span><span><strong id="cartTotal">$0.00</strong></span></div>
+            <p class="sum-free mt-3 mb-4"><i class="fas fa-truck me-2"></i>Complimentary delivery on orders over $150</p>
+
+            <h4 class="mt-4">Checkout</h4>
+            <form id="checkoutForm" class="form-lux">
+              <div class="mb-3"><label class="form-label">Full Name</label><input type="text" class="form-control" id="custName" required></div>
+              <div class="mb-3"><label class="form-label">Email</label><input type="email" class="form-control" id="custEmail" required></div>
+              <div class="mb-3"><label class="form-label">Phone</label><input type="tel" class="form-control" id="custPhone" required></div>
+              <div class="mb-3"><label class="form-label">Delivery Address</label><textarea class="form-control" id="custAddress" rows="2" required></textarea></div>
+              <div class="mb-3"><label class="form-label">Payment</label>
+                <select class="form-select" id="paymentMethod">
+                  <option>Card</option>
+                  <option>Cash</option>
+                  <option>Contactless</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-gold w-100">Place Order <i class="fas fa-lock"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success modal -->
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-lux">
+        <div class="modal-body text-center p-5">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3 class="mt-4">Order Confirmed</h3>
+          <p class="text-muted mt-2">Your order number is <strong class="text-gold" id="orderNumber">—</strong>.<br>Our kitchen begins preparing shortly.</p>
+          <a href="index.html" class="btn-gold mt-3">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">AUR<span>E</span>LIA</div>
+          <p class="mt-3">Fine dining & lounge. An evening at AURELIA is an immersion into flavour, light and quiet luxury.</p>
+          <div class="social-f mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 12 Silvercrest Avenue, New York, NY 10013</li>
+            <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@aurelia.dining</li>
+            <li><i class="fas fa-clock"></i> Tue–Sun · 5:30pm – 11:00pm</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon · Closed</li>
+            <li>Tue – Thu · 5:30pm – 10:30pm</li>
+            <li>Fri – Sat · 5:00pm – 11:30pm</li>
+            <li>Sun · 5:00pm – 9:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Aurelia Fine Dining. Crafted by OrbonTech.</p>
+        <p class="text-gold" style="letter-spacing:.18em;">Bon Appétit <i class="fas fa-heart" style="font-size:.7rem;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.page-hero-about-mex {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.85), rgba(220, 20, 60, 0.65), rgba(255, 140, 0, 0.55)), url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1600') center/cover no-repeat;
+  padding: 160px 0 80px;
+  color: var(--white);
+}
+
+.page-hero-about-mex h1 {
+  font-size: 5rem;
+  color: var(--yellow);
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.page-hero-about-mex p {
+  color: rgba(255,255,255,0.9);
+}
+
+.mex-milestone {
+  background: var(--white);
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  height: 100%;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.mex-milestone:hover {
+  border-color: var(--orange);
+  transform: translateY(-4px);
+}
+
+.mex-year {
+  font-family: 'Lobster', cursive;
+  font-size: 2.2rem;
+  color: var(--red);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.mex-milestone h5 {
+  color: var(--green);
+}
+
+.mex-milestone p {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .page-hero-about-mex {
+    padding: 130px 0 60px;
+  }
+  .page-hero-about-mex h1 {
+    font-size: 3rem;
+  }
+}

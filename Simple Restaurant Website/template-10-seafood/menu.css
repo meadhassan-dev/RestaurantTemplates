@@ -1,0 +1,66 @@
+.page-banner-seafood {
+  background: linear-gradient(135deg, #000080, #000060);
+  padding: 120px 0 60px;
+  text-align: center;
+  position: relative;
+}
+
+.page-banner-seafood::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600') center/cover no-repeat;
+  opacity: 0.1;
+}
+
+.page-banner-seafood h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.page-banner-seafood p {
+  color: #87CEEB;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  position: relative;
+}
+
+.menu-full-seafood {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.menu-full-seafood .nav-tabs .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #000080;
+  border: none;
+  padding: 12px 25px;
+  letter-spacing: 0.5px;
+}
+
+.menu-full-seafood .nav-tabs .nav-link.active {
+  background: #000080;
+  color: #FF7F50;
+  border-radius: 30px;
+}
+
+.menu-full-seafood .menu-item .badge {
+  background: #000080;
+  color: #FF7F50;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .page-banner-seafood h1 {
+    font-size: 2.5rem;
+  }
+}

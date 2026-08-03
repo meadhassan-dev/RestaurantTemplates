@@ -1,0 +1,223 @@
+:root {
+  --green: #2E7D32;
+  --beige: #F5F0E8;
+  --white: #FFFFFF;
+  --sage: #8FBC8F;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Lora', serif;
+  color: #333;
+  padding-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.text-green { color: var(--green); }
+.bg-beige { background: var(--beige); }
+.bg-green { background: var(--green); }
+.text-white { color: var(--white); }
+
+.section-padding { padding: 100px 0; }
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.btn-custom {
+  background: var(--green);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background: #1B5E20;
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
+}
+
+.floating-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.floating-nav .navbar-brand {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.floating-nav .nav-link {
+  color: rgba(255,255,255,0.9);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.floating-nav .nav-link:hover { color: var(--sage); }
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--white);
+  animation: fadeUp 1s ease-out;
+}
+
+.hero-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.85);
+  margin: 20px 0 30px;
+  animation: fadeUp 1s ease-out 0.3s both;
+}
+
+.hero-section .btn-custom {
+  animation: fadeUp 1s ease-out 0.6s both;
+  background: var(--white);
+  color: var(--green);
+}
+
+.hero-section .btn-custom:hover {
+  background: var(--sage);
+  color: var(--white);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.leaf-icon {
+  display: inline-block;
+  margin: 0 15px;
+  animation: sway 3s ease-in-out infinite;
+}
+
+.leaf-right {
+  animation-delay: 1.5s;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 25px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.menu-img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -25px auto 15px;
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+.menu-card h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.menu-price {
+  display: inline-block;
+  background: var(--sage);
+  color: var(--white);
+  padding: 5px 18px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.chef-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--green);
+}
+
+.review-card {
+  background: var(--beige);
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+}
+
+.stars { color: #FFB300; }
+
+.reviewer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 8px;
+  transition: background 0.3s;
+}
+
+.social-links a:hover { background: var(--sage); color: var(--white); }
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.5rem; }
+  .section-title { font-size: 1.8rem; }
+  .section-padding { padding: 60px 0; }
+}

@@ -1,0 +1,49 @@
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(135deg, var(--purple) 0%, #4a0a7a 50%, #8B29D6 100%);
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.page-hero-title {
+  font-family: 'Kanit', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-hero-subtitle {
+  font-family: 'Mali', cursive;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  margin-top: 10px;
+}
+
+.contact-info i {
+  width: 40px;
+  text-align: center;
+}
+
+.map-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 12px 20px;
+  border: 2px solid #eee;
+}
+
+.form-control:focus {
+  border-color: var(--purple);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.5rem; }
+}

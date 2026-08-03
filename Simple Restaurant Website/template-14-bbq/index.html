@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smokehouse BBQ | Southern Style</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bbq-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-fire"></i> SMOKEHOUSE BBQ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav14">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav14">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-image d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <div class="hero-stats">
+        <div class="row justify-content-center">
+          <div class="col-4 col-md-3">
+            <h2 class="stat-number">10K+</h2>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+          <div class="col-4 col-md-3">
+            <h2 class="stat-number">25+</h2>
+            <p class="stat-label">Years Smoking</p>
+          </div>
+          <div class="col-4 col-md-3">
+            <h2 class="stat-number">100%</h2>
+            <p class="stat-label">Wood-Fired</p>
+          </div>
+        </div>
+      </div>
+      <h1 class="hero-title">Southern <span class="text-amber">BBQ</span></h1>
+      <p class="hero-subtitle">Low & slow. Wood-fired perfection since 2001.</p>
+      <a href="menu.html" class="btn btn-lg btn-amber">See Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="section-padding bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800" alt="BBQ Pit" class="img-fluid rounded-3">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title">Our Story</h2>
+          <p class="text-muted">Smokehouse BBQ started in a backyard pit in 2001. What began as weekend gatherings with friends and family grew into a beloved Southern smokehouse known for authentic, wood-fired barbecue.</p>
+          <p class="text-muted">We use only hickory and oak wood, smoking our meats low and slow for up to 16 hours.</p>
+          <a href="about.html" class="btn btn-amber">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Meats</h2>
+      <p class="text-center text-muted mb-5">Real BBQ. Real wood. Real flavor.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Pulled Pork" class="menu-img">
+            <div class="menu-card-body">
+              <h5>Pulled Pork</h5>
+              <p class="text-muted small">Slow-smoked 12 hrs, house BBQ sauce</p>
+              <span class="menu-price">$18.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400" alt="Beef Brisket" class="menu-img">
+            <div class="menu-card-body">
+              <h5>Beef Brisket</h5>
+              <p class="text-muted small">Texas-style, smoked 16 hrs, pepper rub</p>
+              <span class="menu-price">$22.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=400" alt="St. Louis Ribs" class="menu-img">
+            <div class="menu-card-body">
+              <h5>St. Louis Ribs</h5>
+              <p class="text-muted small">Fall-off-the-bone, dry rub, tangy glaze</p>
+              <span class="menu-price">$24.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1559742811-822f4580b12b?w=400" alt="Smoked Sausage" class="menu-img">
+            <div class="menu-card-body">
+              <h5>Smoked Sausage</h5>
+              <p class="text-muted small">House-made, jalapeño cheddar links</p>
+              <span class="menu-price">$16.95</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="menu.html" class="btn btn-red btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-dark text-center">
+    <div class="container">
+      <h2 class="section-title text-white">Reserve Your Table</h2>
+      <p class="text-white mb-4">Come hungry, leave happy.</p>
+      <a href="contact.html" class="btn btn-amber btn-lg">Make a Reservation</a>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-fire text-amber"></i> SMOKEHOUSE BBQ</h5>
+          <p class="small text-muted">Low & slow since 2001.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 456 Hickory Ln, Nashville, TN</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (615) 555-0157</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> info@smokehousebbq.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Tue-Sun 11am - 9pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

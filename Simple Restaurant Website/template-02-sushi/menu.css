@@ -1,0 +1,27 @@
+.page-hero-sushi {
+  background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=1600') center/cover no-repeat;
+  padding: 180px 0 100px;
+  color: var(--white);
+}
+
+.page-hero-sushi h1 {
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+
+.page-hero-sushi p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .page-hero-sushi {
+    padding: 150px 0 70px;
+  }
+  .page-hero-sushi h1 {
+    font-size: 3.5rem;
+  }
+}

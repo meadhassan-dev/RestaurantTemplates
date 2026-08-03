@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — EMBER & ASH</title>
+  <meta name="description" content="The story, philosophy and fire-keepers behind EMBER & ASH modern fire kitchen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet"></noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">EMBER &amp; <span>ASH</span></div>
+    <div class="pl-flame"><i class="fas fa-fire"></i></div>
+    <div class="pl-line"></div>
+  </div>
+  <script>
+    (function () {
+      function hide() {
+        var p = document.getElementById('preloader');
+        if (p) p.classList.add('hidden');
+        var b = document.body;
+        if (b) b.classList.remove('lock');
+      }
+      if (document.readyState !== 'loading') { hide(); return; }
+      document.addEventListener('DOMContentLoaded', hide);
+      window.addEventListener('load', hide);
+      setTimeout(hide, 2500);
+    })();
+  </script>
+
+  <div class="announce">
+    <i class="fas fa-fire"></i>Now Serving Wood-Fired Steaks &amp; Smoked Ribs Every Night<i class="fas fa-fire"></i>
+  </div>
+
+  <nav class="navbar navbar-expand-lg ea-nav" id="eaNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">EMBER<i class="fas fa-fire nb-flame"></i>&amp;ASH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#eaNavbar" aria-controls="eaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="eaNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-fire"></i>Cart<span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="page-hero-ea">
+    <div class="container">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <div class="ph-breadcrumb reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>About Us</span></div>
+          <h1 class="ph-title reveal delay-1">The people behind the <span class="script">flames</span></h1>
+          <p class="ph-sub reveal delay-2">One wood-fired grill, a crew of fire-obsessed cooks, and a dining room that hums like a forge. This is who we are.</p>
+          <div class="ph-badge reveal delay-3">
+            <span class="pb-num">EST. 2018</span>
+            <span class="pb-note">lit every night since</span>
+          </div>
+        </div>
+        <div class="ph-media reveal-right">
+          <span class="ph-badge-script">since 2018</span>
+          <div class="ph-frame"></div>
+          <div class="ph-frame-2"></div>
+          <div class="ph-photo" data-parallax>
+            <img fetchpriority="high" src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1000&q=80" alt="The EMBER & ASH kitchen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-1">
+          <div class="section-eyebrow reveal">Our Roots</div>
+          <h2 class="section-title reveal">Born in <span class="outline">smoke</span></h2>
+          <p class="section-subtitle left reveal" style="margin-left:0;">We started as a four-table grill room above a barbershop. No gas line, no fryer — just oak, charcoal and a bet that people would drive across town for a properly fire-cooked steak.</p>
+          <p class="reveal delay-1" style="color:var(--muted);max-width:540px;">Eight years later the bet paid off. The grill room is a 60-seat fire kitchen, the oak comes from a family farm in Missouri, and every plate still passes over real coals — the way it did on day one.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-6 reveal delay-2"><div class="phil-list"><ul style="display:flex;flex-direction:column;gap:18px;"><li><span class="pl-ico"><i class="fas fa-tree"></i></span><div><h6>Oak &amp; Charcoal</h6><p>Real wood, never gas</p></div></li></ul></div></div>
+            <div class="col-6 reveal delay-3"><div class="phil-list"><ul style="display:flex;flex-direction:column;gap:18px;"><li><span class="pl-ico"><i class="fas fa-seedling"></i></span><div><h6>Local Farms</h6><p>Texas-raised, seasonal</p></div></li></ul></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2">
+          <div class="media-card reveal-right" data-parallax style="aspect-ratio:4/4.2;">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="Inside the EMBER & ASH dining room" loading="lazy">
+            <span class="mc-sticker">The Grill Room</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="section-eyebrow reveal">What We Stand For</div>
+      <h2 class="section-title reveal">Three rules of <span class="script">fire</span></h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="value-card reveal">
+            <span class="vc-num">01</span>
+            <div class="vc-ico"><i class="fas fa-fire"></i></div>
+            <h4>Burn Real Wood</h4>
+            <p>No gas jets, no shortcuts. Oak, hickory and charcoal give our food its soul — and our room its smell.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card reveal delay-1">
+            <span class="vc-num">02</span>
+            <div class="vc-ico"><i class="fas fa-clock"></i></div>
+            <h4>Low &amp; Slow</h4>
+            <p>Our ribs smoke for twelve hours, our sauces reduce overnight. Fire demands patience, and we give it willingly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card reveal delay-2">
+            <span class="vc-num">03</span>
+            <div class="vc-ico"><i class="fas fa-hands"></i></div>
+            <h4>Keep It Loud</h4>
+            <p>We're a kitchen that laughs, a room that cheers and a restaurant that never whispers. Bold food, bold energy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-end mb-5 g-4">
+        <div class="col-lg-7">
+          <div class="section-eyebrow reveal">The Fire-keepers</div>
+          <h2 class="section-title reveal">Meet the <span class="script">crew</span></h2>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <span class="script reveal" style="font-size:2rem;color:var(--flame);">grill · bar · room</span>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="chef-card-ea reveal">
+            <div class="chef-img">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Head Chef Marcus Cole" loading="lazy">
+              <span class="chef-flame"><i class="fas fa-fire"></i></span>
+            </div>
+            <div class="chef-body">
+              <h4>Marcus Cole</h4>
+              <span class="chef-role">Head Chef · Pitmaster</span>
+              <p>Marcus has fed fire for twenty years, from Texas pit rooms to Michelin kitchens. He still sharpens his own knives — and checks every ember.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="chef-card-ea reveal delay-1">
+            <div class="chef-img">
+              <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=600&q=80" alt="Bar Lead Sofia Reyes" loading="lazy">
+              <span class="chef-flame"><i class="fas fa-fire"></i></span>
+            </div>
+            <div class="chef-body">
+              <h4>Sofia Reyes</h4>
+              <span class="chef-role">Bar &amp; Smoke Lead</span>
+              <p>Sofia smokes, torches and stirs — her cocktails arrive under glass domes of rosemary smoke and leave as legend.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="chef-card-ea reveal delay-2">
+            <div class="chef-img">
+              <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80" alt="Maître d' Denise Okoye" loading="lazy">
+              <span class="chef-flame"><i class="fas fa-fire"></i></span>
+            </div>
+            <div class="chef-body">
+              <h4>Denise Okoye</h4>
+              <span class="chef-role">Maître d'</span>
+              <p>Denise runs the room with a velvet glove and a heavy hand on the music. She knows every regular by name — and order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-ea">
+    <div class="container">
+      <div class="stats-grid-ea">
+        <div class="stat-item-ea reveal"><span class="stat-num-ea" data-count="8">0</span><span class="stat-suffix-ea">+</span><span class="stat-label-ea">Years on Fire</span></div>
+        <div class="stat-item-ea reveal delay-1"><span class="stat-num-ea" data-count="60">0</span><span class="stat-label-ea">Fire Seats</span></div>
+        <div class="stat-item-ea reveal delay-2"><span class="stat-num-ea" data-count="26">0</span><span class="stat-label-ea">Awards Won</span></div>
+        <div class="stat-item-ea reveal delay-3"><span class="stat-num-ea" data-count="12">0</span><span class="stat-label-ea">Hour Smokers</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="cta-ea reveal-scale">
+        <div class="section-eyebrow center reveal" style="justify-content:center;">Come &amp; See</div>
+        <h2 class="cta-title reveal">Meet us at the <span class="script">coals</span></h2>
+        <p class="cta-sub reveal delay-1">Watch the fire do its thing — then taste the results.</p>
+        <div class="cta-actions reveal delay-2">
+          <a href="reservation.html" class="btn-ea"><i class="fas fa-fire"></i>Book a Table</a>
+          <a href="menu.html" class="btn-outline-ea">See the Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-ea">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">EMBER<i class="fas fa-fire nb-flame"></i>&amp;ASH</div>
+          <p class="mt-3">A modern fire kitchen built on oak, embers and twelve-hour smoke. Loud, bold and unforgettable — since 2018.</p>
+          <div class="social-f-ea mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 42 Riverfire Street, Austin, TX 78701</li>
+            <li><i class="fas fa-phone-alt"></i> (512) 555-0142</li>
+            <li><i class="fas fa-envelope"></i> eat@emberandash.com</li>
+            <li><i class="fas fa-clock"></i> Tue – Sun · 5:00pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon · Closed</li>
+            <li>Tue – Thu · 5:00pm – 11:00pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 4:30pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Ember &amp; Ash Fire Kitchen. Crafted by OrbonTech.</p>
+        <p class="text-flame"><i class="fas fa-fire"></i> Eat the fire</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-fire"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <div id="toastWrap"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

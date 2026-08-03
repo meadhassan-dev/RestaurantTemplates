@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NOCTURNE</title>
+  <meta name="description" content="Get in touch with NOCTURNE — reservations, private dining, press and everything in between.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">NOCT<span>U</span>RNE</div>
+    <div class="pl-diamond"><i class="fas fa-gem"></i></div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg noc-nav solid" id="nocNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NOCT<span>U</span>RNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nocNavbar" aria-controls="nocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nocNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="page-hero-noc">
+    <div class="container">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <div class="ph-breadcrumb reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Contact</span></div>
+          <h1 class="ph-title reveal delay-1">Say <span class="script">hello</span></h1>
+          <p class="ph-sub reveal delay-2">For reservations, private dining, press or simply to tell us about a wonderful evening — we read every word.</p>
+          <div class="ph-badge reveal delay-3">
+            <span class="pb-num">24h</span>
+            <span class="pb-note">average response time</span>
+          </div>
+        </div>
+        <div class="ph-media reveal-right">
+          <div class="ph-frame"></div>
+          <div class="ph-photo" data-parallax>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1000&q=80" alt="The NOCTURNE bar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="section-eyebrow reveal">Get in Touch</div>
+      <h2 class="section-title reveal">Find us after <span class="script">dark</span></h2>
+
+      <div class="contact-wrap">
+        <div class="reveal-left">
+          <div class="contact-map">
+            <iframe title="NOCTURNE location map" src="https://maps.google.com/maps?q=88%20Wabash%20Ave%20Chicago&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <div class="cm-pin"><i class="fas fa-location-dot"></i><span>NOCTURNE · Chicago</span></div>
+          </div>
+        </div>
+        <div class="contact-card reveal-right">
+          <div class="cc-item">
+            <span class="cc-ico"><i class="fas fa-location-dot"></i></span>
+            <div><h6>Address</h6><p>88 Wabash Avenue, Chicago, IL 60611</p></div>
+          </div>
+          <div class="cc-item">
+            <span class="cc-ico"><i class="fas fa-phone-alt"></i></span>
+            <div><h6>Reservations</h6><p><a href="tel:+13125550199">(312) 555-0199</a></p></div>
+          </div>
+          <div class="cc-item">
+            <span class="cc-ico"><i class="fas fa-envelope"></i></span>
+            <div><h6>Email</h6><p><a href="mailto:reserve@nocturne.dining">reserve@nocturne.dining</a></p></div>
+          </div>
+          <div class="cc-item">
+            <span class="cc-ico"><i class="fas fa-users"></i></span>
+            <div><h6>Private Dining</h6><p><a href="mailto:private@nocturne.dining">private@nocturne.dining</a></p></div>
+          </div>
+          <div class="cc-item">
+            <span class="cc-ico"><i class="fas fa-clock"></i></span>
+            <div><h6>Opening Hours</h6><p>Wed – Sun · 5:30pm – 12:00am<br>Mon – Tue · Closed</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message form -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-eyebrow reveal" style="justify-content:center;">Write to Us</div>
+          <h2 class="section-title reveal">Drop us a <span class="script">line</span></h2>
+          <div class="res-form-card reveal-scale mt-4">
+            <form id="contactForm" class="form-noc" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="msgName">Your Name</label>
+                  <input type="text" class="form-control" id="msgName" placeholder="Full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="msgEmail">Email</label>
+                  <input type="email" class="form-control" id="msgEmail" placeholder="you@email.com" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="msgSubject">Subject</label>
+                  <input type="text" class="form-control" id="msgSubject" placeholder="What's this about?">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="msgBody">Message</label>
+                  <textarea class="form-control" id="msgBody" rows="5" placeholder="Tell us everything..." required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-noc w-100"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-noc">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">NOCT<span>U</span>RNE</div>
+          <p class="mt-3">Modern gastronomy after dark. An evening at NOCTURNE is an immersion into flavour, light and midnight glamour.</p>
+          <div class="social-f-noc mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 88 Wabash Avenue, Chicago, IL 60611</li>
+            <li><i class="fas fa-phone-alt"></i> (312) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@nocturne.dining</li>
+            <li><i class="fas fa-clock"></i> Wed–Sun · 5:30pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon – Tue · Closed</li>
+            <li>Wed – Thu · 5:30pm – 11:30pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 5:00pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Nocturne Dining. Crafted by OrbonTech.</p>
+        <p class="text-grad-noc"><i class="fas fa-gem" style="font-size:.6rem;"></i> Bon Appétit</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success modal -->
+  <div class="modal fade" id="contactSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-noc">
+        <div class="modal-body text-center p-4 p-md-5">
+          <div class="success-icon-noc"><i class="fas fa-check"></i></div>
+          <h3 class="mt-4 mb-2">Message Received</h3>
+          <p style="color:var(--muted);">Thank you for writing to us — we'll be in touch within 24 hours.</p>
+          <div class="mt-4 p-3" style="background:rgba(185,172,255,.06);border:1px solid var(--line);border-radius:14px;">
+            <span style="font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--violet-soft);">Reference</span>
+            <div class="mt-1" style="font-family:var(--serif);font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;" id="msgConfirmNumber">MSG-0000</div>
+          </div>
+          <button class="btn-noc mt-4" data-bs-dismiss="modal">Lovely</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

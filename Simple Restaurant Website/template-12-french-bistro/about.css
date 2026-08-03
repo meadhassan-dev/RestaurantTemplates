@@ -1,0 +1,97 @@
+.page-hero {
+  min-height: 50vh;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--rosegold);
+  padding-top: 100px;
+}
+
+.page-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.page-hero-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.hero-overline {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--rosegold);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.philosophy-card {
+  background: var(--white);
+  padding: 40px 25px;
+  border-left: 4px solid var(--rosegold);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--rosegold);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 70px;
+  background: var(--rosegold);
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: var(--lavender);
+  padding: 20px 25px;
+  margin-left: 20px;
+}
+
+.timeline-content h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.5rem; }
+}

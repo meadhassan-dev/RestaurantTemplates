@@ -1,0 +1,132 @@
+.page-banner-cafe {
+  background: #6B4423;
+  padding: 60px 0 50px;
+  text-align: center;
+}
+
+.page-banner-cafe h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #98FF98;
+}
+
+.page-banner-cafe p {
+  color: #FFF8F0;
+  font-size: 1.2rem;
+}
+
+.contact-info-cafe {
+  padding: 80px 0;
+  background: #FFF8F0;
+}
+
+.contact-info-cafe .section-title {
+  text-align: left;
+}
+
+.contact-info-cafe .section-divider {
+  margin: 0 0 30px;
+}
+
+.contact-info-cafe form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(107,68,35,0.08);
+}
+
+.contact-info-cafe .form-control {
+  border-radius: 30px;
+  border: 1px solid #e0d5c0;
+  padding: 12px 20px;
+  background: #faf5ef;
+}
+
+.contact-info-cafe .form-control:focus {
+  border-color: #98FF98;
+  box-shadow: 0 0 0 0.2rem rgba(152,255,152,0.25);
+}
+
+.contact-info-cafe .btn-submit {
+  background: #6B4423;
+  color: #98FF98;
+  border: 2px solid #98FF98;
+  padding: 12px 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.contact-info-cafe .btn-submit:hover {
+  background: #98FF98;
+  color: #6B4423;
+}
+
+.contact-details-card {
+  background: #6B4423;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+
+.contact-details-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.2rem;
+  color: #98FF98;
+  margin-bottom: 30px;
+}
+
+.contact-details-card .detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.contact-details-card .detail i {
+  color: #98FF98;
+  font-size: 1.5rem;
+  min-width: 40px;
+  margin-top: 3px;
+}
+
+.contact-details-card .detail h6 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  color: #98FF98;
+  margin-bottom: 3px;
+}
+
+.contact-details-card .detail p {
+  color: #e0d5c0;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.map-section-cafe {
+  width: 100%;
+  height: 450px;
+}
+
+.map-section-cafe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .page-banner-cafe h1 {
+    font-size: 2.8rem;
+  }
+  .contact-info-cafe form {
+    padding: 20px;
+  }
+  .contact-details-card {
+    padding: 25px;
+  }
+  .map-section-cafe {
+    height: 300px;
+  }
+}

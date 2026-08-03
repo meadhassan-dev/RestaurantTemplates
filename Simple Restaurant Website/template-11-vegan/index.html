@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegan Bowl | Plant-Based Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark floating-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-leaf"></i> Vegan Bowl</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav11">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <svg class="leaf-icon" width="40" height="40" viewBox="0 0 24 24" fill="#8FBC8F"><path d="M17 8C8 10 5 21 5 21s11-3 13-12c0 0-4-1-6-1z"/></svg>
+      <h1 class="hero-title">Fresh. Organic. <span class="text-green">Vibrant.</span></h1>
+      <p class="hero-subtitle">Plant-based bowls crafted with love from farm to table.</p>
+      <a href="menu.html" class="btn btn-lg btn-custom">Explore Our Menu</a>
+      <svg class="leaf-icon leaf-right" width="40" height="40" viewBox="0 0 24 24" fill="#8FBC8F"><path d="M17 8C8 10 5 21 5 21s11-3 13-12c0 0-4-1-6-1z"/></svg>
+    </div>
+  </section>
+
+  <section id="about" class="section-padding bg-beige">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title"><i class="fas fa-seedling text-green"></i> Our Story</h2>
+          <p class="text-muted">Vegan Bowl was born from a simple belief: that plant-based food can be exciting, nourishing, and kind to the planet. What started as a humble farmers' market stall is now a beloved community kitchen.</p>
+          <p class="text-muted">We source organic ingredients from local farms and transform them into colorful, nutrient-packed bowls that celebrate nature's bounty.</p>
+          <a href="about.html" class="btn btn-custom">Learn More</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Fresh vegetables" class="img-fluid rounded-3 shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Menu Items</h2>
+      <p class="text-center text-muted mb-5">A taste of what we offer every day.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card text-center">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Buddha Bowl" class="menu-img">
+            <div class="menu-icon"><i class="fas fa-leaf"></i></div>
+            <h5>Buddha Bowl</h5>
+            <p class="text-muted">Quinoa, sweet potato, chickpeas, avocado, tahini</p>
+            <span class="menu-price">$14.95</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card text-center">
+            <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400" alt="Quinoa Salad" class="menu-img">
+            <div class="menu-icon"><i class="fas fa-leaf"></i></div>
+            <h5>Quinoa Power Salad</h5>
+            <p class="text-muted">Kale, quinoa, pomegranate, citrus dressing</p>
+            <span class="menu-price">$13.50</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card text-center">
+            <img src="https://images.unsplash.com/photo-1502743780246-f00d0eadd4c0?w=400" alt="Smoothie" class="menu-img">
+            <div class="menu-icon"><i class="fas fa-leaf"></i></div>
+            <h5>Green Goddess Smoothie</h5>
+            <p class="text-muted">Spinach, banana, mango, coconut milk, chia</p>
+            <span class="menu-price">$8.95</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="menu-card text-center">
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400" alt="Vegan Burger" class="menu-img">
+            <div class="menu-icon"><i class="fas fa-leaf"></i></div>
+            <h5>Classic Vegan Burger</h5>
+            <p class="text-muted">Black bean patty, lettuce, avocado, whole wheat bun</p>
+            <span class="menu-price">$15.95</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="menu.html" class="btn btn-custom btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-green text-white text-center">
+    <div class="container">
+      <h2 class="section-title text-white">Make a Reservation</h2>
+      <p class="mb-4">We can't wait to welcome you for a fresh, plant-powered meal.</p>
+      <a href="reservation.html" class="btn btn-lg btn-light text-green fw-bold">Reserve a Table</a>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-leaf text-green"></i> Vegan Bowl</h5>
+          <p class="small text-muted">Plant-based happiness in every bowl.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 42 Green St, Portland, OR</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (503) 555-0142</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> hello@veganbowl.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Daily 8am - 9pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

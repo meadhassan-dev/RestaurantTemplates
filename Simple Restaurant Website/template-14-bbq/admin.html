@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Smokehouse BBQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="admin.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-fire"></i> SMOKEHOUSE BBQ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav14">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav14">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Admin Dashboard</li>
+        </ol>
+      </nav>
+      <h1>Admin Dashboard</h1>
+      <p class="lead">Manage your restaurant</p>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon" style="background: rgba(196,30,58,0.1); color: var(--primary);">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="stat-value" id="totalOrders">0</div>
+            <div class="stat-label">Total Orders</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon" style="background: rgba(40,167,69,0.1); color: #28a745;">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="stat-value" id="totalRevenue">$0</div>
+            <div class="stat-label">Total Revenue</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon" style="background: rgba(255,193,7,0.1); color: #ffc107;">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-value" id="pendingOrders">0</div>
+            <div class="stat-label">Pending Orders</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon" style="background: rgba(23,162,184,0.1); color: #17a2b8;">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="stat-value" id="menuItems">0</div>
+            <div class="stat-label">Menu Items</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="admin-section">
+            <h5><i class="fas fa-list-alt me-2"></i> Recent Orders</h5>
+            <div id="ordersList"></div>
+            <div id="noOrders" class="text-center py-4 text-muted">
+              <i class="fas fa-inbox fa-3x mb-3 d-block"></i>
+              <p>No orders yet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="admin-section">
+            <h5><i class="fas fa-plus-circle me-2"></i> Add Menu Item</h5>
+            <form class="admin-form" id="addItemForm">
+              <div class="mb-3">
+                <label class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemName" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Category</label>
+                <select class="form-select" id="itemCategory" required>
+                  <option value="">Select category</option>
+                  <option value="starters">Starters</option>
+                  <option value="ribs">Ribs</option>
+                  <option value="brisket">Brisket</option>
+                  <option value="chicken">Chicken</option>
+                  <option value="sides">Sides</option>
+                  <option value="desserts">Desserts</option>
+                  <option value="drinks">Drinks</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Price ($)</label>
+                <input type="number" class="form-control" id="itemPrice" step="0.01" min="0" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Description</label>
+                <textarea class="form-control" id="itemDescription" rows="3" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Image URL</label>
+                <input type="url" class="form-control" id="itemImage" placeholder="https://...">
+              </div>
+              <button type="submit" class="btn btn-admin w-100">
+                <i class="fas fa-plus me-2"></i> Add to Menu
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="admin-section">
+            <h5><i class="fas fa-edit me-2"></i> Menu Management</h5>
+            <div class="table-responsive">
+              <table class="menu-table">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="menuTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5>SMOKEHOUSE BBQ</h5>
+          <p>Pit-smoked meats, bold flavors, and a whole lot of soul.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="menu.html">Our Menu</a></li>
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="events.html">Events</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 789 Pitmaster Lane, Smokeville</li>
+            <li class="mb-2"><i class="fas fa-phone me-2"></i> (555) 456-7890</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@smokehousebbq.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 OrbonTech. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    const defaultMenu = [
+      { id: 1, name: "Loaded Nachos", category: "starters", price: 11.99, description: "Tortilla chips piled high with pulled pork, cheese, jalapeños, and sour cream", image: "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=600&q=80" },
+      { id: 2, name: "Smoked Wings", category: "starters", price: 12.99, description: "Hickory-smoked chicken wings tossed in our signature BBQ glaze", image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80" },
+      { id: 3, name: "Baby Back Ribs", category: "ribs", price: 24.99, description: "Fall-off-the-bone baby back ribs, slow-smoked for 12 hours", image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" },
+      { id: 4, name: "St. Louis Ribs", category: "ribs", price: 26.99, description: "Full rack of St. Louis-style spare ribs with house dry rub", image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80" },
+      { id: 5, name: "Beef Brisket", category: "brisket", price: 22.99, description: "Sliced brisket smoked low and slow over post oak for 14 hours", image: "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?w=600&q=80" },
+      { id: 6, name: "Chopped Brisket Sandwich", category: "brisket", price: 16.99, description: "Piled-high chopped brisket on a brioche bun with coleslaw", image: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" },
+      { id: 7, name: "Smoked Half Chicken", category: "chicken", price: 17.99, description: "Whole half chicken smoked with our spice blend", image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&q=80" },
+      { id: 8, name: "Mac & Cheese", category: "sides", price: 6.99, description: "Creamy five-cheese mac topped with smoked gouda breadcrumbs", image: "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?w=600&q=80" },
+      { id: 9, name: "Coleslaw", category: "sides", price: 4.99, description: "Crisp shredded cabbage in a tangy vinegar-based dressing", image: "https://images.unsplash.com/photo-1625937286074-9ca519d5d8e4?w=600&q=80" },
+      { id: 10, name: "Pulled Pork Tacos", category: "starters", price: 13.99, description: "Three soft corn tortillas with smoky pulled pork", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" },
+      { id: 11, name: "Pecan Pie", category: "desserts", price: 8.99, description: "Classic Southern pecan pie with a buttery crust", image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" },
+      { id: 12, name: "Sweet Tea", category: "drinks", price: 3.99, description: "Traditional Southern sweet iced tea", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" }
+    ];
+
+    function getMenu() {
+      const stored = localStorage.getItem('menuItems');
+      if (!stored) { localStorage.setItem('menuItems', JSON.stringify(defaultMenu)); return [...defaultMenu]; }
+      return JSON.parse(stored);
+    }
+
+    function saveMenu(menu) { localStorage.setItem('menuItems', JSON.stringify(menu)); }
+    function getOrders() { return JSON.parse(localStorage.getItem('orders')) || []; }
+
+    function renderStats() {
+      const orders = getOrders();
+      const menu = getMenu();
+      document.getElementById('totalOrders').textContent = orders.length;
+      document.getElementById('totalRevenue').textContent = `$${orders.reduce((s, o) => s + o.total, 0).toFixed(2)}`;
+      document.getElementById('pendingOrders').textContent = orders.filter(o => o.status === 'pending').length;
+      document.getElementById('menuItems').textContent = menu.length;
+    }
+
+    function renderOrders() {
+      const orders = getOrders();
+      const list = document.getElementById('ordersList');
+      const noOrders = document.getElementById('noOrders');
+      if (orders.length === 0) { list.innerHTML = ''; noOrders.classList.remove('d-none'); return; }
+      noOrders.classList.add('d-none');
+      list.innerHTML = orders.map(order => `
+        <div class="order-item">
+          <div class="order-header">
+            <span class="order-id">Order #${order.id}</span>
+            <span class="order-status status-${order.status}">${order.status.charAt(0).toUpperCase() + order.status.slice(1)}</span>
+          </div>
+          <div class="order-details">
+            <div>${order.items.map(i => `${i.name} x${i.qty}`).join(', ')}</div>
+            <div class="order-total">Total: $${order.total.toFixed(2)}</div>
+            <div class="order-actions">
+              <select onchange="updateOrderStatus(${order.id}, this.value)">
+                <option value="pending" ${order.status==='pending'?'selected':''}>Pending</option>
+                <option value="preparing" ${order.status==='preparing'?'selected':''}>Preparing</option>
+                <option value="ready" ${order.status==='ready'?'selected':''}>Ready</option>
+                <option value="delivered" ${order.status==='delivered'?'selected':''}>Delivered</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function updateOrderStatus(id, status) {
+      let orders = getOrders();
+      const order = orders.find(o => o.id === id);
+      if (order) { order.status = status; localStorage.setItem('orders', JSON.stringify(orders)); renderStats(); }
+    }
+
+    function renderMenuTable() {
+      const menu = getMenu();
+      document.getElementById('menuTableBody').innerHTML = menu.map(item => `
+        <tr>
+          <td><img src="${item.image}" alt="${item.name}" class="table-img"></td>
+          <td>${item.name}</td>
+          <td>${item.category.charAt(0).toUpperCase() + item.category.slice(1)}</td>
+          <td>$${item.price.toFixed(2)}</td>
+          <td>
+            <div class="table-actions">
+              <button class="btn-edit" onclick="editItem(${item.id})"><i class="fas fa-edit"></i></button>
+              <button class="btn-delete" onclick="deleteItem(${item.id})"><i class="fas fa-trash"></i></button>
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function deleteItem(id) {
+      if (confirm('Delete this item?')) {
+        saveMenu(getMenu().filter(i => i.id !== id));
+        renderMenuTable(); renderStats();
+      }
+    }
+
+    function editItem(id) {
+      const item = getMenu().find(i => i.id === id);
+      if (!item) return;
+      document.getElementById('itemName').value = item.name;
+      document.getElementById('itemCategory').value = item.category;
+      document.getElementById('itemPrice').value = item.price;
+      document.getElementById('itemDescription').value = item.description;
+      document.getElementById('itemImage').value = item.image;
+      const form = document.getElementById('addItemForm');
+      form.dataset.editId = id;
+      form.querySelector('button[type="submit"]').textContent = 'Update Menu Item';
+      window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
+    }
+
+    document.getElementById('addItemForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let menu = getMenu();
+      const editId = this.dataset.editId;
+      const newItem = {
+        name: document.getElementById('itemName').value,
+        category: document.getElementById('itemCategory').value,
+        price: parseFloat(document.getElementById('itemPrice').value),
+        description: document.getElementById('itemDescription').value,
+        image: document.getElementById('itemImage').value || 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&q=80'
+      };
+      if (editId) {
+        const idx = menu.findIndex(i => i.id === parseInt(editId));
+        if (idx !== -1) menu[idx] = { ...menu[idx], ...newItem };
+        delete this.dataset.editId;
+        this.querySelector('button[type="submit"]').textContent = 'Add to Menu';
+      } else {
+        newItem.id = Date.now();
+        menu.push(newItem);
+      }
+      saveMenu(menu); this.reset(); renderMenuTable(); renderStats();
+    });
+
+    function updateCartCount() {
+      document.getElementById('cartCount').textContent = (JSON.parse(localStorage.getItem('cart')) || []).reduce((s, c) => s + c.qty, 0);
+    }
+
+    renderStats(); renderOrders(); renderMenuTable(); updateCartCount();
+  </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+.page-banner-cafe {
+  background: #6B4423;
+  padding: 60px 0 50px;
+  text-align: center;
+}
+
+.page-banner-cafe h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #98FF98;
+}
+
+.page-banner-cafe p {
+  color: #FFF8F0;
+  font-size: 1.2rem;
+}
+
+.about-story-cafe {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.about-story-cafe img {
+  width: 100%;
+  border-radius: 50% 20% 50% 20%;
+}
+
+.about-story-cafe .section-title {
+  text-align: left;
+}
+
+.about-story-cafe .section-divider {
+  margin: 0 0 30px;
+}
+
+.about-story-cafe .feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.about-story-cafe .feature i {
+  color: #98FF98;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  background: #6B4423;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.timeline-cafe {
+  padding: 80px 0;
+  background: #FFF8F0;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: #98FF98;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-year {
+  background: #6B4423;
+  color: #98FF98;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 10px 25px;
+  min-width: 120px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  top: 0;
+  border-radius: 30px;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 25px;
+  width: calc(50% - 80px);
+  margin-top: 60px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(107,68,35,0.08);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-content h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #6B4423;
+}
+
+.timeline-content p {
+  color: #8B7355;
+  margin: 0;
+}
+
+.values-cafe {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.value-card {
+  text-align: center;
+  padding: 30px;
+  background: #FFF8F0;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(107,68,35,0.1);
+}
+
+.value-card i {
+  font-size: 2.5rem;
+  color: #98FF98;
+  background: #6B4423;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.value-card h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #6B4423;
+}
+
+.value-card p {
+  color: #8B7355;
+}
+
+.stats-cafe {
+  padding: 60px 0;
+  background: #6B4423;
+  color: #FFF8F0;
+}
+
+.stat-item h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #98FF98;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .page-banner-cafe h1 {
+    font-size: 2.8rem;
+  }
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-year {
+    left: 20px;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    min-width: 90px;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    flex-direction: column;
+    padding-left: 60px;
+  }
+  .timeline-content {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 60px 0 0;
+  }
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+}

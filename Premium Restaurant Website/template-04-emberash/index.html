@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMBER & ASH — Modern Fire Kitchen</title>
+  <meta name="description" content="EMBER & ASH — a modern fire kitchen. Flame-seared steaks, ember-grilled classics and bold flavours served over open fire.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet"></noscript>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">EMBER &amp; <span>ASH</span></div>
+    <div class="pl-flame"><i class="fas fa-fire"></i></div>
+    <div class="pl-line"></div>
+  </div>
+  <script>
+    (function () {
+      function hide() {
+        var p = document.getElementById('preloader');
+        if (p) p.classList.add('hidden');
+        var b = document.body;
+        if (b) b.classList.remove('lock');
+      }
+      if (document.readyState !== 'loading') { hide(); return; }
+      document.addEventListener('DOMContentLoaded', hide);
+      window.addEventListener('load', hide);
+      setTimeout(hide, 2500);
+    })();
+  </script>
+
+  <div class="announce">
+    <i class="fas fa-fire"></i>Now Serving Wood-Fired Steaks &amp; Smoked Ribs Every Night<i class="fas fa-fire"></i>
+  </div>
+
+  <nav class="navbar navbar-expand-lg ea-nav" id="eaNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">EMBER<i class="fas fa-fire nb-flame"></i>&amp;ASH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#eaNavbar" aria-controls="eaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="eaNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-ea active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-ea" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-fire"></i>Cart<span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-ea">
+    <div class="hero-bg">
+      <img fetchpriority="high" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1800&q=80" alt="Flame-seared steak at EMBER & ASH">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-kicker reveal"><span class="dot"></span>Modern Fire Kitchen · Since 2018</div>
+        <h1 class="hero-title">
+          <span class="outline">EAT THE</span><br>
+          <span class="hl-grad">FIRE.</span><br>
+          <span class="script">flame-grilled with heart</span>
+        </h1>
+        <p class="hero-sub reveal delay-1">Wood, embers and twelve hours of smoke. <strong>EMBER &amp; ASH</strong> is a bold fire kitchen — open flame, big flavour and plates that come straight off the coals.</p>
+        <div class="hero-actions reveal delay-2">
+          <a href="reservation.html" class="btn-ea"><i class="fas fa-fire"></i>Reserve a Table</a>
+          <a href="menu.html" class="btn-outline-ea">Explore the Menu</a>
+        </div>
+        <div class="hero-chips reveal delay-3">
+          <div class="feature-chip"><i class="fas fa-flame"></i><span>Live Fire Pass</span></div>
+          <div class="feature-chip"><i class="fas fa-drumstick-bite"></i><span>12h Smoked Ribs</span></div>
+          <div class="feature-chip"><i class="fas fa-trophy"></i><span>Best Steak 2026</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-rot">
+      <svg viewBox="0 0 150 150">
+        <defs><path id="circlePath" d="M 75,75 m -55,0 a 55,55 0 1,1 110,0 a 55,55 0 1,1 -110,0"/></defs>
+        <text><textPath href="#circlePath">FRESH · FLAME · SMOKE · FLAVOUR · </textPath></text>
+      </svg>
+      <div class="rot-center"><i class="fas fa-fire"></i></div>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Open Fire Grill</span><i class="fas fa-fire"></i>
+      <span>Smoked Ribs</span><i class="fas fa-fire"></i>
+      <span>Flame-Seared Steak</span><i class="fas fa-fire"></i>
+      <span>Ember Prawns</span><i class="fas fa-fire"></i>
+      <span>Molten Lava Cake</span><i class="fas fa-fire"></i>
+      <span>Open Fire Grill</span><i class="fas fa-fire"></i>
+      <span>Smoked Ribs</span><i class="fas fa-fire"></i>
+      <span>Flame-Seared Steak</span><i class="fas fa-fire"></i>
+      <span>Ember Prawns</span><i class="fas fa-fire"></i>
+      <span>Molten Lava Cake</span><i class="fas fa-fire"></i>
+    </div>
+  </div>
+
+  <!-- Story -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="media-card reveal-left" data-parallax style="aspect-ratio:4/4.6;">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80" alt="Plates of flame-cooked food" loading="lazy">
+            <span class="mc-sticker">Since 2018</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">Our Story</div>
+          <h2 class="section-title reveal">Built on <span class="outline">wood</span> &amp; <span class="script">fire</span></h2>
+          <p class="section-subtitle left reveal delay-1" style="margin-left:0;">We traded gas flames for oak and charcoal the day we opened. Since then, every steak, prawn and vegetable that leaves our pass has been kissed by real fire — never a grill pan in sight.</p>
+          <p class="reveal delay-2" style="color:var(--muted);max-width:540px;">Our kitchen is loud, our cellar is bold, and our philosophy is simple: season hard, burn clean, serve fast.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4 reveal delay-2">
+            <a href="about.html" class="btn-ea">Read Our Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature dishes -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="row align-items-end mb-5 g-4">
+        <div class="col-lg-7">
+          <div class="section-eyebrow reveal">Straight Off the Coals</div>
+          <h2 class="section-title reveal">Signature <span class="script">fire</span></h2>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="menu.html" class="btn-outline-ea reveal">Full Menu <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="sig-card reveal">
+            <div class="sig-img">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Open-fire ribeye steak" loading="lazy">
+              <span class="sig-tag"><i class="fas fa-fire"></i> Signature</span>
+              <span class="sig-price">$62</span>
+            </div>
+            <div class="sig-body">
+              <h4>Open-Fire <em>Ribeye</em></h4>
+              <p>Char-grilled over oak, bone marrow butter, rosemary, hand-cut chips.</p>
+              <a href="order.html" class="btn-ea" style="padding:10px 20px;font-size:.68rem;">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card reveal delay-1">
+            <div class="sig-img">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80" alt="Smash burger with double patties" loading="lazy">
+              <span class="sig-tag"><i class="fas fa-fire"></i> Bestseller</span>
+              <span class="sig-price">$24</span>
+            </div>
+            <div class="sig-body">
+              <h4>Smash Burger <em>"Ash"</em></h4>
+              <p>Double smashed beef, smoked cheddar, ember onions, house sauce, brioche.</p>
+              <a href="order.html" class="btn-ea" style="padding:10px 20px;font-size:.68rem;">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sig-card reveal delay-2">
+            <div class="sig-img">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80" alt="Molten lava chocolate cake" loading="lazy">
+              <span class="sig-tag"><i class="fas fa-fire"></i> Sweet End</span>
+              <span class="sig-price">$18</span>
+            </div>
+            <div class="sig-body">
+              <h4>Molten <em>Lava Cake</em></h4>
+              <p>Dark chocolate fondant, molten centre, vanilla gelato, cocoa dust.</p>
+              <a href="order.html" class="btn-ea" style="padding:10px 20px;font-size:.68rem;">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu preview -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">From the Menu</div>
+          <h2 class="section-title reveal">The ember <span class="script">essentials</span></h2>
+          <div class="tasting-ea mt-4">
+            <div class="t-row reveal"><span class="t-no">01</span><span class="t-name">Flame-Seared Octopus<span>Smoked paprika butter · charred lemon</span></span><span class="t-price">$26</span></div>
+            <div class="t-row reveal"><span class="t-no">02</span><span class="t-name">Smoked BBQ Rack<span>12-hour ribs · ember glaze · pickled slaw</span></span><span class="t-price">$42</span></div>
+            <div class="t-row reveal"><span class="t-no">03</span><span class="t-name">Paneer Tikka Bowl<span>Tandoori masala · mint yogurt</span></span><span class="t-price">$26</span></div>
+            <div class="t-row reveal"><span class="t-no">04</span><span class="t-name">Ember Sour<span>Bourbon · smoked maple · rosemary</span></span><span class="t-price">$20</span></div>
+          </div>
+          <div class="mt-4 reveal">
+            <a href="menu.html" class="btn-ea"><i class="fas fa-utensils"></i>View Full Menu</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="media-card reveal-right" data-parallax style="aspect-ratio:4/3;">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=900&q=80" alt="Ember-grilled king prawns" loading="lazy">
+            <span class="mc-sticker">From the Pass</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-ea">
+    <div class="container">
+      <div class="stats-grid-ea">
+        <div class="stat-item-ea reveal"><span class="stat-num-ea" data-count="2018">0</span><span class="stat-label-ea">Year Lit</span></div>
+        <div class="stat-item-ea reveal delay-1"><span class="stat-num-ea" data-count="120">0</span><span class="stat-suffix-ea">+</span><span class="stat-label-ea">Fire Dishes</span></div>
+        <div class="stat-item-ea reveal delay-2"><span class="stat-num-ea" data-count="500">0</span><span class="stat-suffix-ea">k</span><span class="stat-label-ea">Steaks Grilled</span></div>
+        <div class="stat-item-ea reveal delay-3"><span class="stat-num-ea" data-count="4">0</span><span class="stat-suffix-ea">.9</span><span class="stat-label-ea">Guest Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="section-eyebrow center reveal" style="justify-content:center;">Guest Love</div>
+      <h2 class="section-title text-center reveal">Loved by <span class="script">fire-eaters</span></h2>
+      <div class="row justify-content-center g-4 mt-4">
+        <div class="col-lg-8">
+          <div class="testi-block reveal-scale">
+            <span class="tq">"</span>
+            <blockquote>The ribeye came off the coals and still sizzling — best steak of my life. You can taste the <span class="script">wood</span> in every bite.</blockquote>
+            <div class="t-name">David Marquez</div>
+            <div class="t-role">Food Critic</div>
+            <div class="t-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section class="strip-ea">
+    <div class="strip-item reveal"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=80" alt="Wood-fired food" loading="lazy"><span>the flames</span></div>
+    <div class="strip-item reveal delay-1"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=700&q=80" alt="Fresh grill selection" loading="lazy"><span>the smoke</span></div>
+    <div class="strip-item reveal delay-2"><img src="https://images.unsplash.com/photo-1541516160071-4bb0c5af65ba?w=700&q=80" alt="Burrata plate" loading="lazy"><span>the fire</span></div>
+    <div class="strip-item reveal delay-3"><img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=700&q=80" alt="Ember cocktail" loading="lazy"><span>the dark</span></div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="cta-ea reveal-scale">
+        <div class="section-eyebrow center reveal" style="justify-content:center;">Hungry Yet?</div>
+        <h2 class="cta-title reveal">Come eat the <span class="script">fire</span></h2>
+        <p class="cta-sub reveal delay-1">Thirty seats around the fire pass — or let us bring the embers to your door.</p>
+        <div class="cta-actions reveal delay-2">
+          <a href="reservation.html" class="btn-ea"><i class="fas fa-fire"></i>Book a Table</a>
+          <a href="order.html" class="btn-outline-ea"><i class="fas fa-bag-shopping"></i>Order Online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-ea">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">EMBER<i class="fas fa-fire nb-flame"></i>&amp;ASH</div>
+          <p class="mt-3">A modern fire kitchen built on oak, embers and twelve-hour smoke. Loud, bold and unforgettable — since 2018.</p>
+          <div class="social-f-ea mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 42 Riverfire Street, Austin, TX 78701</li>
+            <li><i class="fas fa-phone-alt"></i> (512) 555-0142</li>
+            <li><i class="fas fa-envelope"></i> eat@emberandash.com</li>
+            <li><i class="fas fa-clock"></i> Tue – Sun · 5:00pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon · Closed</li>
+            <li>Tue – Thu · 5:00pm – 11:00pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 4:30pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Ember &amp; Ash Fire Kitchen. Crafted by OrbonTech.</p>
+        <p class="text-flame"><i class="fas fa-fire"></i> Eat the fire</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-fire"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <div id="toastWrap"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dough & Fire | Artisan Pizza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span><i class="fas fa-phone-alt text-gold"></i> Call us: (212) 555-0199</span>
+      <div class="top-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light pizza-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Dough & Fire</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav15">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav15">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-full d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1 class="hero-title">Dough & <span class="text-gold">Fire</span></h1>
+      <p class="hero-subtitle">Authentic Neapolitan pizza, handmade with passion.</p>
+      <a href="menu.html" class="btn btn-lg btn-gold">View Our Menu</a>
+    </div>
+    <svg class="hero-divider" viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z"></path>
+    </svg>
+  </section>
+
+  <section id="about" class="section-padding bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">Our Story</h2>
+          <p class="text-muted">Dough & Fire was born from a love affair with authentic Neapolitan pizza. Our master pizzaiolos trained in Naples, learning the art of wood-fired cooking passed down through generations.</p>
+          <p class="text-muted">We use only San Marzano tomatoes, fresh mozzarella di bufala, and 00 flour imported from Italy.</p>
+          <a href="about.html" class="btn btn-red-custom">Learn More</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800" alt="Pizza" class="img-fluid rounded-3 shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Featured Pizzas</h2>
+      <p class="text-center text-muted mb-5">A taste of our wood-fired perfection.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="pizza-card">
+            <span class="signature-badge">Signature</span>
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Margherita" class="pizza-img">
+            <div class="pizza-card-body">
+              <h4>Margherita</h4>
+              <p class="text-muted small">San Marzano tomatoes, buffalo mozzarella, basil</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pizza-price">$16.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pizza-card">
+            <span class="signature-badge">Signature</span>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pepperoni" class="pizza-img">
+            <div class="pizza-card-body">
+              <h4>Pepperoni</h4>
+              <p class="text-muted small">Tomato sauce, mozzarella, pepperoni, oregano</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pizza-price">$18.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pizza-card">
+            <span class="signature-badge">Signature</span>
+            <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?w=400" alt="Quattro Formaggi" class="pizza-img">
+            <div class="pizza-card-body">
+              <h4>Quattro Formaggi</h4>
+              <p class="text-muted small">Mozzarella, gorgonzola, fontina, parmesan</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="pizza-price">$20.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="menu.html" class="btn btn-red-custom btn-lg">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-red text-white text-center">
+    <div class="container">
+      <h2 class="section-title text-white">Order Online</h2>
+      <p class="mb-4">Craving pizza? Order now for delivery or pickup.</p>
+      <h3 class="phone-number">(212) 555-0199</h3>
+      <a href="contact.html" class="btn btn-gold btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-pizza-slice text-gold"></i> Dough & Fire</h5>
+          <p class="small text-muted">Authentic Neapolitan pizza since 2015.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 246 Bleecker St, New York, NY</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (212) 555-0199</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> ciao@doughandfire.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Daily 11am - 11pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

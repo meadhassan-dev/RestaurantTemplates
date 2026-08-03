@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Table — NOCTURNE</title>
+  <meta name="description" content="Review your NOCTURNE order and check out.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">NOCT<span>U</span>RNE</div>
+    <div class="pl-diamond"><i class="fas fa-gem"></i></div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg noc-nav solid" id="nocNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NOCT<span>U</span>RNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nocNavbar" aria-controls="nocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nocNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="page-hero-noc">
+    <div class="container">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <div class="ph-breadcrumb reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Your Table</span></div>
+          <h1 class="ph-title reveal delay-1">Your <span class="script">table</span></h1>
+          <p class="ph-sub reveal delay-2">Everything you've chosen, gathered in one place. Review, adjust and send it to the kitchen.</p>
+          <div class="ph-badge reveal delay-3">
+            <span class="pb-num">Free delivery</span>
+            <span class="pb-note">on orders over $150</span>
+          </div>
+        </div>
+        <div class="ph-media reveal-right">
+          <div class="ph-frame"></div>
+          <div class="ph-photo" data-parallax>
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1000&q=80" alt="A NOCTURNE table set for dinner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="section-eyebrow reveal">Order Summary</div>
+      <h2 class="section-title reveal">Ready to <span class="script">serve</span></h2>
+
+      <div id="emptyCart" class="empty-cart-noc d-none reveal">
+        <i class="fas fa-bag-shopping"></i>
+        <h3>Your table is empty</h3>
+        <p>The night hasn't started yet — let's fix that.</p>
+        <a href="order.html" class="btn-noc mt-2">Browse the Menu <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+
+      <div class="cart-wrap">
+        <div class="cart-items" id="cartItems">
+          <!-- items rendered by app.js -->
+        </div>
+
+        <aside class="cart-summary reveal-right">
+          <h4>Summary</h4>
+          <div class="cs-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+          <div class="cs-row"><span>Tax (10.25%)</span><span id="cartTax">$0.00</span></div>
+          <div class="cs-row" id="cartDeliveryRow"><span>Delivery</span><span id="cartDelivery">$8.50</span></div>
+          <div class="cs-row grad-row"><span>Total</span><span class="cs-val" id="cartTotal">$0.00</span></div>
+
+          <form id="checkoutForm" class="mt-4" novalidate>
+            <div class="ck-field mb-3">
+              <label for="custName">Full Name</label>
+              <input type="text" class="form-control" id="custName" placeholder="Adrian Moreau" required>
+            </div>
+            <div class="row g-3">
+              <div class="col-12 ck-field">
+                <label for="custEmail">Email</label>
+                <input type="email" class="form-control" id="custEmail" placeholder="you@email.com" required>
+              </div>
+              <div class="col-md-6 ck-field">
+                <label for="custPhone">Phone</label>
+                <input type="tel" class="form-control" id="custPhone" placeholder="(312) 555-0100" required>
+              </div>
+              <div class="col-md-6 ck-field">
+                <label for="paymentMethod">Payment</label>
+                <select class="form-select" id="paymentMethod" required>
+                  <option value="card" selected>Credit Card</option>
+                  <option value="cash">Cash on Delivery</option>
+                  <option value="paypal">PayPal</option>
+                </select>
+              </div>
+              <div class="col-12 ck-field">
+                <label for="custAddress">Delivery Address</label>
+                <textarea class="form-control" id="custAddress" rows="2" placeholder="Street, city, zip..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-noc w-100 mt-4"><i class="fas fa-crown me-2"></i>Place Order</button>
+            <p class="form-note mt-3 mb-0">Pay on delivery or at the door — the kitchen starts as soon as we confirm.</p>
+          </form>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-noc">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">NOCT<span>U</span>RNE</div>
+          <p class="mt-3">Modern gastronomy after dark. An evening at NOCTURNE is an immersion into flavour, light and midnight glamour.</p>
+          <div class="social-f-noc mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 88 Wabash Avenue, Chicago, IL 60611</li>
+            <li><i class="fas fa-phone-alt"></i> (312) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@nocturne.dining</li>
+            <li><i class="fas fa-clock"></i> Wed–Sun · 5:30pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon – Tue · Closed</li>
+            <li>Wed – Thu · 5:30pm – 11:30pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 5:00pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Nocturne Dining. Crafted by OrbonTech.</p>
+        <p class="text-grad-noc"><i class="fas fa-gem" style="font-size:.6rem;"></i> Bon Appétit</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success modal -->
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-noc">
+        <div class="modal-body text-center p-4 p-md-5">
+          <div class="success-icon-noc"><i class="fas fa-crown"></i></div>
+          <h3 class="mt-4 mb-2">Order Placed</h3>
+          <p style="color:var(--muted);">The kitchen has your order. Expect it within the hour — dressed, warm and ready.</p>
+          <div class="mt-4 p-3" style="background:rgba(185,172,255,.06);border:1px solid var(--line);border-radius:14px;">
+            <span style="font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--violet-soft);">Order Number</span>
+            <div class="mt-1" style="font-family:var(--serif);font-size:1.5rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;" id="orderNumber">NCT-0000</div>
+          </div>
+          <button class="btn-noc mt-4" data-bs-dismiss="modal">Magnifique</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <div id="toastWrap"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

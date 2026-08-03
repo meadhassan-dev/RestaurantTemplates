@@ -1,0 +1,46 @@
+/* ============================================================
+   RESERVATION PAGE
+   ============================================================ */
+.res-info-card {
+  position: relative; overflow: hidden;
+  background: var(--ink-3); border: 2px solid var(--line-strong);
+  border-radius: var(--radius-lg); padding: 26px 26px 28px;
+  transition: transform .4s var(--ease), border-color .4s, box-shadow .4s;
+  height: 100%;
+}
+.res-info-card:hover { transform: translateY(-6px); border-color: var(--flame); box-shadow: 8px 8px 0 rgba(140, 15, 20, .4); }
+.res-info-card .ric-num {
+  font-family: var(--display); font-size: 3.2rem; color: transparent;
+  -webkit-text-stroke: 2px var(--flame); position: absolute; top: 10px; right: 18px; opacity: .7;
+}
+.res-info-card .ric-ico {
+  width: 54px; height: 54px; display: flex; align-items: center; justify-content: center;
+  background: var(--grad); color: var(--ink); font-size: 1.15rem;
+  border-radius: 14px; border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 rgba(140, 15, 20, .5); margin-bottom: 18px;
+}
+.res-info-card h5 { font-size: 1.1rem; margin-bottom: 8px; }
+.res-info-card p { color: var(--muted); font-size: .88rem; margin: 0; }
+
+.res-time-hint { color: var(--flame); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; margin-top: 6px; }
+.res-time-hint i { margin-right: 6px; }
+
+.form-ea .input-icon-wrap { position: relative; }
+.form-ea .input-icon-wrap > i {
+  position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
+  color: var(--flame); z-index: 5; pointer-events: none;
+}
+.form-ea .input-icon-wrap .form-control,
+.form-ea .input-icon-wrap .form-select { padding-left: 46px; }
+
+.res-check-row { display: flex; align-items: flex-start; gap: 12px; }
+.res-check-row i { color: var(--flame); margin-top: 4px; }
+.res-check-row p { color: var(--muted); font-size: .84rem; margin: 0; }
+
+.res-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255, 94, 26, .12); border: 2px dashed var(--line-strong);
+  border-radius: 14px; padding: 12px 18px; color: var(--flame-soft);
+  font-size: .82rem; letter-spacing: .04em;
+}
+.res-badge i { color: var(--flame); }

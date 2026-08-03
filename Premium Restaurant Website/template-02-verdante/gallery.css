@@ -1,0 +1,40 @@
+/* ============================================================
+   GALLERY PAGE
+   ============================================================ */
+.gallery-filter { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 44px; }
+.gallery-filter button {
+  padding: 12px 24px; background: var(--surface); border: 1.5px solid var(--line);
+  color: var(--ink); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase;
+  cursor: pointer; border-radius: 999px; transition: all .35s var(--ease);
+}
+.gallery-filter button:hover { border-color: var(--emerald); color: var(--emerald); transform: translateY(-2px); }
+.gallery-filter button.active { background: var(--emerald); color: var(--white); border-color: var(--emerald); }
+
+.gallery-grid-lux { columns: 3 320px; column-gap: 22px; }
+.g-item {
+  position: relative; break-inside: avoid; margin-bottom: 22px;
+  border-radius: 999px 999px 22px 22px; overflow: hidden; cursor: pointer;
+  transform: translateZ(0);
+}
+.g-item img { width: 100%; display: block; transition: transform 1.1s var(--ease); filter: saturate(.96); }
+.g-item:hover img { transform: scale(1.08); filter: saturate(1.05); }
+.g-expand {
+  position: absolute; top: 18px; right: 18px; width: 44px; height: 44px;
+  background: rgba(246,241,232,.92); color: var(--emerald); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: .9rem;
+  opacity: 0; transform: translateY(8px) rotate(-10deg); transition: all .45s var(--ease);
+  box-shadow: 0 10px 24px rgba(14,74,54,.2);
+}
+.g-item:hover .g-expand { opacity: 1; transform: translateY(0) rotate(0); }
+.g-caption {
+  position: absolute; left: 18px; right: 18px; bottom: 18px;
+  background: rgba(246,241,232,.94); backdrop-filter: blur(6px);
+  padding: 14px 18px; border-radius: 18px;
+  opacity: 0; transform: translateY(14px); transition: all .45s var(--ease);
+}
+.g-item:hover .g-caption { opacity: 1; transform: translateY(0); }
+.g-caption h5 { font-size: 1.05rem; margin: 0; font-style: italic; }
+.g-caption p { color: var(--muted); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; margin: 2px 0 0; }
+
+@media (max-width: 991px) { .gallery-grid-lux { columns: 2 260px; } }
+@media (max-width: 575px) { .gallery-grid-lux { columns: 1; } }

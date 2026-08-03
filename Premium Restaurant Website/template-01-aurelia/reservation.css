@@ -1,0 +1,35 @@
+/* ============================================================
+   RESERVATION PAGE
+   ============================================================ */
+.reservation-wrap { background: var(--dark-2); border: 1px solid rgba(201,169,110,.22); position: relative; }
+.reservation-wrap::before { content: ''; position: absolute; top: -8px; left: -8px; right: -8px; bottom: -8px; border: 1px solid rgba(201,169,110,.18); pointer-events: none; }
+.res-aside {
+  background: linear-gradient(160deg, rgba(201,169,110,.12), transparent 55%), var(--black);
+  padding: 54px 42px; height: 100%; border-right: 1px solid rgba(201,169,110,.22);
+}
+.res-aside h3 { font-size: 2rem; }
+.res-aside p { color: var(--muted); font-size: .92rem; }
+.res-info-row { display: flex; gap: 16px; align-items: flex-start; margin-top: 26px; }
+.res-info-row i { color: var(--gold); font-size: 1.3rem; width: 34px; margin-top: 4px; }
+.res-info-row h6 { font-family: var(--sans); font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.res-info-row p { color: var(--cream); font-size: .9rem; margin: 0; }
+.res-form-side { padding: 54px 42px; }
+
+.res-time-slots { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.res-time-slots .slot {
+  padding: 10px 18px; border: 1px solid rgba(201,169,110,.35); color: var(--cream);
+  font-size: .78rem; letter-spacing: .08em; cursor: pointer; border-radius: 2px;
+  transition: all .35s var(--ease);
+}
+.res-time-slots .slot:hover { border-color: var(--gold); color: var(--gold); }
+.res-time-slots .slot.active { background: linear-gradient(135deg, var(--gold-light), var(--gold-dark)); color: var(--black); border-color: transparent; font-weight: 600; }
+
+.guest-picker { display: flex; align-items: center; gap: 16px; }
+.guest-picker button { width: 42px; height: 42px; border: 1px solid rgba(201,169,110,.4); background: transparent; color: var(--gold); border-radius: 2px; transition: all .3s; }
+.guest-picker button:hover { background: var(--gold); color: var(--black); }
+.guest-picker .gp-value { font-family: var(--serif); font-size: 1.6rem; color: var(--cream); min-width: 46px; text-align: center; }
+
+@media (max-width: 991px) {
+  .res-aside { border-right: none; border-bottom: 1px solid rgba(201,169,110,.22); }
+  .res-aside, .res-form-side { padding: 40px 26px; }
+}

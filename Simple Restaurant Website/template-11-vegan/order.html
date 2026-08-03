@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online | Vegan Bowl</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark floating-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-leaf"></i> Vegan Bowl</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav11">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="page-hero-title">Order Online</h1>
+      <p class="page-hero-subtitle">Fresh plant-based meals delivered to your door.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <button class="btn filter-btn active" data-category="all">All</button>
+        <button class="btn filter-btn" data-category="bowls">Bowls</button>
+        <button class="btn filter-btn" data-category="mains">Mains</button>
+        <button class="btn filter-btn" data-category="drinks">Drinks</button>
+        <button class="btn filter-btn" data-category="desserts">Desserts</button>
+      </div>
+
+      <div class="row g-4 mt-3">
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="bowls">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Buddha Bowl" class="order-img">
+            <div class="order-card-body">
+              <h5>Buddha Bowl</h5>
+              <p class="text-muted small">Quinoa, roasted sweet potato, chickpeas, avocado, tahini</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$14.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Buddha Bowl', 14, 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400" alt="Avocado Toast" class="order-img">
+            <div class="order-card-body">
+              <h5>Avocado Toast</h5>
+              <p class="text-muted small">Sourdough, smashed avocado, cherry tomatoes, microgreens</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$11.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Avocado Toast', 11, 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="bowls">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400" alt="Quinoa Salad" class="order-img">
+            <div class="order-card-body">
+              <h5>Quinoa Salad</h5>
+              <p class="text-muted small">Kale, quinoa, pomegranate, almonds, citrus dressing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$13.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Quinoa Salad', 13, 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1586816001966-79b736744398?w=400" alt="Veggie Burger" class="order-img">
+            <div class="order-card-body">
+              <h5>Veggie Burger</h5>
+              <p class="text-muted small">Black bean patty, lettuce, tomato, avocado, whole wheat bun</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$15.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Veggie Burger', 15, 'https://images.unsplash.com/photo-1586816001966-79b736744398?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="bowls">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400" alt="Smoothie Bowl" class="order-img">
+            <div class="order-card-body">
+              <h5>Smoothie Bowl</h5>
+              <p class="text-muted small">Acai, banana, granola, coconut flakes, agave</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$10.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Smoothie Bowl', 10, 'https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400" alt="Tofu Stir Fry" class="order-img">
+            <div class="order-card-body">
+              <h5>Tofu Stir Fry</h5>
+              <p class="text-muted small">Crispy tofu, mixed vegetables, ginger soy glaze, brown rice</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$13.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Tofu Stir Fry', 13, 'https://images.unsplash.com/photo-1574484284002-952d92456975?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Falafel Wrap" class="order-img">
+            <div class="order-card-body">
+              <h5>Falafel Wrap</h5>
+              <p class="text-muted small">Crispy falafel, hummus, pickled veggies, tahini sauce</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$12.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Falafel Wrap', 12, 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400" alt="Coconut Soup" class="order-img">
+            <div class="order-card-body">
+              <h5>Coconut Soup</h5>
+              <p class="text-muted small">Creamy coconut, lemongrass, galangal, mushrooms</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$9.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Coconut Soup', 9, 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="bowls">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400" alt="Acai Bowl" class="order-img">
+            <div class="order-card-body">
+              <h5>Acai Bowl</h5>
+              <p class="text-muted small">Acai blend, banana, granola, berries, honey</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$11.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Acai Bowl', 11, 'https://images.unsplash.com/photo-1590301157890-4810ed352733?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400" alt="Green Juice" class="order-img">
+            <div class="order-card-body">
+              <h5>Green Juice</h5>
+              <p class="text-muted small">Spinach, cucumber, celery, apple, ginger</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$7.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Green Juice', 7, 'https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="drinks">
+          <div class="order-card">
+            <img src="https://images.unsplash.com/photo-1553531889-56cc2b9e874c?w=400" alt="Kombucha" class="order-img">
+            <div class="order-card-body">
+              <h5>Kombucha</h5>
+              <p class="text-muted small">House-brewed, ginger lemon, 16oz</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="order-price">$5.00</span>
+                <button class="btn btn-sm btn-add-cart" onclick="addToCart('Kombucha', 5, 'https://images.unsplash.com/photo-1553531889-56cc2b9e874c?w=400')"><i class="fas fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <a href="cart.html" class="floating-cart" id="floatingCart" style="display:none;">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="floating-count" id="floatingCount">0</span>
+  </a>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-leaf text-green"></i> Vegan Bowl</h5>
+          <p class="small text-muted">Plant-based happiness in every bowl.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 42 Green St, Portland, OR</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (503) 555-0142</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> hello@veganbowl.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Daily 8am - 9pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

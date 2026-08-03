@@ -1,0 +1,17 @@
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.contact-card {
+  background: var(--dark-2); border: 1px solid rgba(201,169,110,.2);
+  padding: 40px 32px; height: 100%; text-align: center;
+  transition: transform .5s var(--ease), border-color .5s;
+}
+.contact-card:hover { transform: translateY(-8px); border-color: rgba(201,169,110,.5); }
+.contact-card i { font-size: 1.8rem; color: var(--gold); margin-bottom: 18px; }
+.contact-card h5 { font-size: 1.25rem; margin-bottom: 8px; }
+.contact-card p { color: var(--muted); font-size: .92rem; margin: 0; }
+
+.map-lux { filter: grayscale(.9) invert(.92) contrast(.9); border: 1px solid rgba(201,169,110,.25); border-radius: 4px; }
+
+.contact-wrap { background: var(--dark-2); border: 1px solid rgba(201,169,110,.22); padding: 50px 44px; }
+@media (max-width: 575px) { .contact-wrap { padding: 34px 22px; } }

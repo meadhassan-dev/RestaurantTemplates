@@ -1,0 +1,27 @@
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600') center/cover;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4.5rem;
+  color: var(--white);
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.page-hero-subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.8rem; }
+}

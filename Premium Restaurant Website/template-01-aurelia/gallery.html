@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — AURELIA</title>
+  <meta name="description" content="A visual journey through the AURELIA dining room, plated art and intimate moments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">AUR<span>E</span>LIA</div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg lux-nav scrolled" id="luxNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AUR<span>E</span>LIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxNavbar" aria-controls="luxNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="luxNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80');">
+    <div class="container">
+      <div class="breadcrumb-lux reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Gallery</span></div>
+      <h1 class="page-hero-title reveal delay-1">Moments of <span class="text-gold">AURELIA</span></h1>
+      <p class="page-hero-sub reveal delay-2" style="color:var(--muted);margin-top:14px;">Step inside — the room, the plates, the craft.</p>
+    </div>
+    <div class="hero-fade"></div>
+  </header>
+
+  <section class="section-padding-lux bg-black">
+    <div class="container">
+      <div class="gallery-filter reveal" id="galleryFilter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="dining">Dining Room</button>
+        <button data-filter="dishes">Plated Art</button>
+        <button data-filter="chef">The Kitchen</button>
+        <button data-filter="events">Private Events</button>
+      </div>
+
+      <div class="gallery-grid-lux" id="galleryGrid">
+        <div class="g-item reveal" data-category="dining" data-caption="The Main Dining Room">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Main dining room">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>The Main Dining Room</h5><p>Dining · Ambience</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dishes" data-caption="Seared Scallop">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80" alt="Seared scallop dish">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Seared Scallop</h5><p>Plated Art</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dining" data-caption="Candlelit Tables">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Candlelit tables">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Candlelit Tables</h5><p>Dining · Ambience</p></div>
+        </div>
+        <div class="g-item reveal" data-category="chef" data-caption="In the Kitchen">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=700&q=80" alt="Chef at work">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>In the Kitchen</h5><p>The Craft</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dishes" data-caption="Wagyu Filet">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Wagyu filet">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Wagyu Filet</h5><p>Plated Art</p></div>
+        </div>
+        <div class="g-item reveal" data-category="events" data-caption="The Private Chef's Table">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=700&q=80" alt="Private dining room">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Chef's Table</h5><p>Private Events</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dishes" data-caption="Valrhona Soufflé">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Chocolate dessert">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Valrhona Soufflé</h5><p>Plated Art</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dining" data-caption="The Terrace">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&q=80" alt="Terrace dining">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>The Terrace</h5><p>Dining · Ambience</p></div>
+        </div>
+        <div class="g-item reveal" data-category="chef" data-caption="Pastry atelier">
+          <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=700&q=80" alt="Pastry chef">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>The Pastry Atelier</h5><p>The Craft</p></div>
+        </div>
+        <div class="g-item reveal" data-category="events" data-caption="Wine Tastings">
+          <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=700&q=80" alt="Wine tasting">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Wine Tastings</h5><p>Private Events</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dishes" data-caption="Champagne Flight">
+          <img src="https://images.unsplash.com/photo-1546177461-79fec1a19ca1?w=700&q=80" alt="Champagne glasses">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Champagne Flight</h5><p>Cellar & Bar</p></div>
+        </div>
+        <div class="g-item reveal" data-category="dining" data-caption="Golden Hour">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80" alt="Restaurant interior at golden hour">
+          <span class="g-expand"><i class="fas fa-expand-alt"></i></span>
+          <div class="g-caption"><h5>Golden Hour</h5><p>Dining · Ambience</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-lux parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80');">
+    <div class="cta-overlay"></div>
+    <div class="container text-center cta-content">
+      <div class="section-eyebrow reveal" style="justify-content:center;">See it in Person</div>
+      <h2 class="cta-title reveal">Some Moments Deserve a Seat</h2>
+      <div class="cta-actions reveal delay-1">
+        <a href="reservation.html" class="btn-gold">Reserve Your Table <i class="fas fa-calendar-check"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">AUR<span>E</span>LIA</div>
+          <p class="mt-3">Fine dining & lounge. An evening at AURELIA is an immersion into flavour, light and quiet luxury.</p>
+          <div class="social-f mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 12 Silvercrest Avenue, New York, NY 10013</li>
+            <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@aurelia.dining</li>
+            <li><i class="fas fa-clock"></i> Tue–Sun · 5:30pm – 11:00pm</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon · Closed</li>
+            <li>Tue – Thu · 5:30pm – 10:30pm</li>
+            <li>Fri – Sat · 5:00pm – 11:30pm</li>
+            <li>Sun · 5:00pm – 9:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Aurelia Fine Dining. Crafted by OrbonTech.</p>
+        <p class="text-gold" style="letter-spacing:.18em;">Bon Appétit <i class="fas fa-heart" style="font-size:.7rem;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

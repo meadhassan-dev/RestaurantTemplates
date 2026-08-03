@@ -1,0 +1,30 @@
+.page-hero-contact-burger {
+  background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?w=1600') center/cover no-repeat;
+  padding: 120px 0 80px;
+  color: var(--white);
+}
+
+.page-hero-contact-burger h1 {
+  font-size: 6rem;
+  color: var(--yellow);
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+}
+
+.page-hero-contact-burger p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+}
+
+.map-section-burger {
+  margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-contact-burger {
+    padding: 100px 0 60px;
+  }
+  .page-hero-contact-burger h1 {
+    font-size: 3.5rem;
+  }
+}

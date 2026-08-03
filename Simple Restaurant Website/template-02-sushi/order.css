@@ -1,0 +1,170 @@
+.page-hero-order {
+  background: var(--black);
+  color: var(--white);
+  padding: 160px 0 80px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid var(--dark-gray);
+  color: var(--dark-gray);
+  padding: 8px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: var(--white);
+}
+
+.order-card {
+  background: var(--white);
+  border: 2px solid #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.order-card:hover {
+  border-color: var(--coral);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.order-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.order-card-body {
+  padding: 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid var(--coral);
+}
+
+.order-card-body h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+}
+
+.order-card-body p {
+  font-size: 0.85rem;
+  color: #777;
+  flex: 1;
+}
+
+.order-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.order-price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--coral);
+  font-size: 1.2rem;
+}
+
+.btn-add-cart {
+  background: var(--coral);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.btn-add-cart:hover {
+  background: #e0683e;
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-add-cart.added {
+  background: var(--dark-gray);
+}
+
+.floating-cart {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--coral);
+  color: var(--white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.5);
+  z-index: 999;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.floating-cart:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
+.floating-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--black);
+  color: var(--white);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--coral);
+  color: var(--white);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

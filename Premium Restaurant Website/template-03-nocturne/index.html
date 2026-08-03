@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOCTURNE — Modern Gastronomy After Dark</title>
+  <meta name="description" content="NOCTURNE — a cinematic modern dining room. Progressive tasting menus, rare cellars and an atmosphere of midnight glamour.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">NOCT<span>U</span>RNE</div>
+    <div class="pl-diamond"><i class="fas fa-gem"></i></div>
+    <div class="pl-line"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg noc-nav" id="nocNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NOCT<span>U</span>RNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nocNavbar" aria-controls="nocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nocNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-noc active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-noc" id="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-ghost">NOCTURNE</div>
+    <div class="container hero-content-noc">
+      <div class="hero-eyebrow reveal">Modern Gastronomy · After Dark</div>
+      <h1 class="hero-title">
+        <span class="line line-1"><span>An evening of</span></span>
+        <span class="line line-2"><span><span class="txt-outline">quiet</span> <span class="txt-grad">luxury</span></span></span>
+        <span class="line line-3"><span>&amp; fire</span></span>
+      </h1>
+      <p class="hero-sub reveal delay-1">A cinematic dining room where progressive tasting menus, rare vintages and candlelight compose a night to remember.</p>
+      <div class="hero-actions reveal delay-2">
+        <a href="reservation.html" class="btn-noc">Reserve a Table <i class="fas fa-arrow-right"></i></a>
+        <a href="menu.html" class="btn-outline-noc">Explore Menu</a>
+      </div>
+      <div class="hero-meta reveal delay-3">
+        <span class="hm"><i class="fas fa-moon"></i> Open till midnight</span>
+        <span class="hm"><i class="fas fa-gem"></i> Rare wine cellar</span>
+        <span class="hm"><i class="fas fa-fire"></i> Fire-kissed kitchen</span>
+      </div>
+    </div>
+    <div class="hero-badge-glass">
+      <span class="hb-num">Est. 2021</span>
+      <span class="hb-note">where nights end well</span>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Progressive Tasting Menus</span><i class="fas fa-gem"></i>
+      <span>Rare Vintages</span><i class="fas fa-wine-glass-alt"></i>
+      <span>Fire-Kissed Kitchen</span><i class="fas fa-fire"></i>
+      <span>Midnight Dining</span><i class="fas fa-moon"></i>
+      <span>Private Chef's Table</span><i class="fas fa-gem"></i>
+      <span>Progressive Tasting Menus</span><i class="fas fa-gem"></i>
+      <span>Rare Vintages</span><i class="fas fa-wine-glass-alt"></i>
+      <span>Fire-Kissed Kitchen</span><i class="fas fa-fire"></i>
+      <span>Midnight Dining</span><i class="fas fa-moon"></i>
+      <span>Private Chef's Table</span><i class="fas fa-gem"></i>
+    </div>
+  </div>
+
+  <!-- Story -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="media-card reveal-left" data-parallax style="aspect-ratio:4/4.6;">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80" alt="The NOCTURNE dining room">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">Our Story</div>
+          <h2 class="section-title reveal">A table set for <span class="script">the senses</span></h2>
+          <div class="gold-ornament d-none"></div>
+          <p class="section-subtitle text-start reveal" style="margin-left:0;">Born in a landmark Chicago address, NOCTURNE celebrates the theatre of dinner — low light, high technique, and plates that arrive like scenes. Each course is composed like a movement: texture, aroma and colour in deliberate harmony.</p>
+          <p class="text-muted-light reveal" style="color:var(--muted);max-width:560px;">Our kitchen works with small farms and a single truffle purveyor, letting each season write its own chapter on the menu. The room is a study in midnight glamour — velvet, brass and candlelight.</p>
+          <div class="row g-4 mt-2">
+            <div class="col-sm-6 reveal delay-1">
+              <div class="phil-item"><i class="fas fa-gem"></i><div><h6>Rare Cellar</h6><p>1,200 curated labels & growers</p></div></div>
+            </div>
+            <div class="col-sm-6 reveal delay-2">
+              <div class="phil-item"><i class="fas fa-fire"></i><div><h6>Live-Fire Pass</h6><p>Oak, ember & smoke precision</p></div></div>
+            </div>
+          </div>
+          <a href="about.html" class="btn-ghost-noc mt-4 reveal delay-3">Discover Our Story <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Dishes -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow reveal">Chef's Selection</div>
+        <h2 class="section-title reveal">Signature <span class="script">creations</span></h2>
+        <p class="section-subtitle reveal">Three plates that define the NOCTURNE table.</p>
+      </div>
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Wagyu dish"><span class="dish-tag">Main Course</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>A5 Wagyu "Midnight"</h4><span class="dish-price">$88</span></div>
+              <p>Japanese A5 wagyu, charred onion, black garlic jus, potato espuma</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal delay-1">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=700&q=80" alt="Tuna tartare"><span class="dish-tag">First Course</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>Tuna Tartare "Velvet"</h4><span class="dish-price">$28</span></div>
+              <p>Ora king tuna, yuzu pearls, avocado cloud, sesame tuile</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal delay-2">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=80" alt="Chocolate dome"><span class="dish-tag">Dessert</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>Noir Chocolate Dome</h4><span class="dish-price">$22</span></div>
+              <p>Dark chocolate dome, salted caramel core, gold leaf</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="menu.html" class="btn-outline-noc">View Full Menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-noc">
+    <div class="container">
+      <div class="stats-grid-noc">
+        <div class="stat-item-noc reveal">
+          <span class="stat-num-noc" data-count="5">0</span><span class="stat-suffix-noc">+</span>
+          <span class="stat-label-noc">Years of Excellence</span>
+        </div>
+        <div class="stat-item-noc reveal delay-1">
+          <span class="stat-num-noc" data-count="32">0</span>
+          <span class="stat-label-noc">Culinary Awards</span>
+        </div>
+        <div class="stat-item-noc reveal delay-2">
+          <span class="stat-num-noc" data-count="120">0</span><span class="stat-suffix-noc">k</span>
+          <span class="stat-label-noc">Guests Served</span>
+        </div>
+        <div class="stat-item-noc reveal delay-3">
+          <span class="stat-num-noc" data-count="1200">0</span><span class="stat-suffix-noc">+</span>
+          <span class="stat-label-noc">Cellar Labels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tasting accordion -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">Tonight's Menu</div>
+          <h2 class="section-title reveal">The <span class="script">degustation</span></h2>
+        </div>
+        <div class="col-lg-6 text-lg-end mt-4 mt-lg-0">
+          <a href="menu.html" class="btn-ghost-noc reveal">Full Menu <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="accordion accordion-noc" id="tastingAccordion">
+        <div class="accordion-item reveal">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course1"><span class="me-3 text-magenta">I.</span> To Begin</button></h3>
+          <div id="course1" class="accordion-collapse collapse" data-bs-parent="#tastingAccordion">
+            <div class="accordion-body">
+              <div class="acc-course"><span class="n">01</span><div class="d"><h6>Tuna Tartare "Velvet"</h6><p>Ora king tuna · yuzu pearls · avocado cloud · sesame tuile</p></div><span class="p">$28</span></div>
+              <div class="acc-course"><span class="n">02</span><div class="d"><h6>Burrata & White Peach</h6><p>Sicilian burrata · white peach · basil pearls · aged balsamic</p></div><span class="p">$24</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal delay-1">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course2"><span class="me-3 text-magenta">II.</span> From the Fire</button></h3>
+          <div id="course2" class="accordion-collapse collapse" data-bs-parent="#tastingAccordion">
+            <div class="accordion-body">
+              <div class="acc-course"><span class="n">03</span><div class="d"><h6>Lobster Cappuccino</h6><p>Twin-tail lobster · bisque foam · tarragon oil</p></div><span class="p">$34</span></div>
+              <div class="acc-course"><span class="n">04</span><div class="d"><h6>A5 Wagyu "Midnight"</h6><p>Japanese A5 wagyu · black garlic jus · potato espuma</p></div><span class="p">$88</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal delay-2">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course3"><span class="me-3 text-magenta">III.</span> The Garden</button></h3>
+          <div id="course3" class="accordion-collapse collapse" data-bs-parent="#tastingAccordion">
+            <div class="accordion-body">
+              <div class="acc-course"><span class="n">05</span><div class="d"><h6>Cauliflower "Crown"</h6><p>Whole-roasted cauliflower · smoked romesco · almond praline</p></div><span class="p">$32</span></div>
+              <div class="acc-course"><span class="n">06</span><div class="d"><h6>Wild Mushroom Tagliatelle</h6><p>Hand-cut pasta · chanterelles · brown butter · thyme</p></div><span class="p">$36</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal delay-3">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course4"><span class="me-3 text-magenta">IV.</span> A Sweet End</button></h3>
+          <div id="course4" class="accordion-collapse collapse" data-bs-parent="#tastingAccordion">
+            <div class="accordion-body">
+              <div class="acc-course"><span class="n">07</span><div class="d"><h6>Noir Chocolate Dome</h6><p>Dark chocolate dome · salted caramel core · gold leaf</p></div><span class="p">$22</span></div>
+              <div class="acc-course"><span class="n">08</span><div class="d"><h6>Peach Melba Verrine</h6><p>Vanilla parfait · peach · raspberry · almond crumble</p></div><span class="p">$18</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 reveal">
+        <span class="text-muted small">Eight courses · $198 per guest · Rare pairing $110</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding-lux bg-ink2">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow reveal" style="justify-content:center;">Guest Voices</div>
+        <h2 class="section-title reveal">Words of <span class="script">praise</span></h2>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card-noc">
+              <span class="t-quote-noc">"</span>
+              <p class="t-text-noc">"The most cinematic evening of our lives. Candlelight, velvet, and every course arriving like a scene. NOCTURNE has redefined what dinner can feel like."</p>
+              <div class="t-author-noc"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Isabella & James Whitmore</h6><small>Anniversary Dinner</small></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card-noc">
+              <span class="t-quote-noc">"</span>
+              <p class="t-text-noc">"As a winemaker I rarely gasp, but their cellar list is pure theatre. The pairing flight moved from soft to striking without a single misstep."</p>
+              <div class="t-author-noc"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Marcus Bennett</h6><small>Wine Connoisseur</small></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card-noc">
+              <span class="t-quote-noc">"</span>
+              <p class="t-text-noc">"We took over the private chef's table for twelve clients. Flawless pacing, breathtaking plates and a team that anticipated everything. Simply world-class."</p>
+              <div class="t-author-noc"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Victoria Laurent</h6><small>Private Event Host</small></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev t-control-noc" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control-next t-control-noc" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="row align-items-end mb-5 g-4">
+        <div class="col-lg-7">
+          <div class="section-eyebrow reveal">After Dark</div>
+          <h2 class="section-title reveal">Moments, <span class="script">captured</span></h2>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="gallery.html" class="btn-ghost-noc reveal">Full Gallery <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="g-hscroll-noc">
+        <div class="g-h-item-noc reveal"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Dining room"><div class="g-h-cap-noc"><h5>The Dining Room</h5><span>Ambience</span></div></div>
+        <div class="g-h-item-noc reveal delay-1"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80" alt="Golden hour"><div class="g-h-cap-noc"><h5>Golden Hour</h5><span>Ambience</span></div></div>
+        <div class="g-h-item-noc reveal delay-2"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Wagyu"><div class="g-h-cap-noc"><h5>From the Pass</h5><span>Plated Art</span></div></div>
+        <div class="g-h-item-noc reveal delay-3"><img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=700&q=80" alt="Chef at the fire"><div class="g-h-cap-noc"><h5>The Fire</h5><span>The Craft</span></div></div>
+        <div class="g-h-item-noc reveal delay-4"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=80" alt="Dessert"><div class="g-h-cap-noc"><h5>Sweet Endings</h5><span>Plated Art</span></div></div>
+        <div class="g-h-item-noc reveal delay-4"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Table setting"><div class="g-h-cap-noc"><h5>Table 12</h5><span>Ambience</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="cta-panel-noc reveal-scale">
+        <div class="section-eyebrow reveal" style="justify-content:center;">Reservations</div>
+        <h2 class="cta-title-noc reveal">Reserve your <span class="script">evening</span></h2>
+        <p class="cta-sub reveal delay-1">Tables are released 30 days in advance. For parties over eight, our private dining team will take the lead.</p>
+        <div class="cta-actions-noc reveal delay-2">
+          <a href="reservation.html" class="btn-noc">Book a Table <i class="fas fa-calendar-check"></i></a>
+          <a href="tel:+13125550199" class="btn-outline-noc"><i class="fas fa-phone-alt"></i> (312) 555-0199</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-noc">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">NOCT<span>U</span>RNE</div>
+          <p class="mt-3">Modern gastronomy after dark. An evening at NOCTURNE is an immersion into flavour, light and midnight glamour.</p>
+          <div class="social-f-noc mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 88 Wabash Avenue, Chicago, IL 60611</li>
+            <li><i class="fas fa-phone-alt"></i> (312) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@nocturne.dining</li>
+            <li><i class="fas fa-clock"></i> Wed–Sun · 5:30pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon – Tue · Closed</li>
+            <li>Wed – Thu · 5:30pm – 11:30pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 5:00pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Nocturne Dining. Crafted by OrbonTech.</p>
+        <p class="text-grad-noc"><i class="fas fa-gem" style="font-size:.6rem;"></i> Bon Appétit</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELIA — Fine Dining & Lounge</title>
+  <meta name="description" content="AURELIA — a premium fine dining experience. Seasonal tasting menus, curated wines and an atmosphere of quiet luxury.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">AUR<span>E</span>LIA</div>
+    <div class="pl-line"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg lux-nav" id="luxNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AUR<span>E</span>LIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxNavbar" aria-controls="luxNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="luxNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-lux active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-lux" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-lux" id="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-vignette"></div>
+    <div class="container hero-content text-center">
+      <div class="hero-eyebrow reveal">Michelin-Starred Experience</div>
+      <h1 class="hero-title">
+        <span class="line-1">Where Every Flavour</span>
+        <span class="line-2 text-gradient-gold">Tells a Story</span>
+      </h1>
+      <p class="hero-sub reveal delay-1">An intimate sanctuary of gastronomic artistry — seasonal tasting menus, rare vintages, and an atmosphere of quiet luxury.</p>
+      <div class="hero-actions reveal delay-2">
+        <a href="reservation.html" class="btn-gold">Reserve a Table <i class="fas fa-arrow-right"></i></a>
+        <a href="menu.html" class="btn-outline-gold ms-lg-3 mt-3 mt-lg-0">Explore Menu</a>
+      </div>
+      <div class="hero-scroll reveal delay-3">
+        <span>Scroll</span>
+        <div class="scroll-line"><i class="fas fa-chevron-down"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Artisan Tasting Menus</span><i class="fas fa-gem"></i>
+      <span>Rare Wine Cellar</span><i class="fas fa-gem"></i>
+      <span>Private Chef's Table</span><i class="fas fa-gem"></i>
+      <span>Fresh Seasonal Produce</span><i class="fas fa-gem"></i>
+      <span>Sommelier Curated Pairings</span><i class="fas fa-gem"></i>
+      <span>Artisan Tasting Menus</span><i class="fas fa-gem"></i>
+      <span>Rare Wine Cellar</span><i class="fas fa-gem"></i>
+      <span>Private Chef's Table</span><i class="fas fa-gem"></i>
+      <span>Fresh Seasonal Produce</span><i class="fas fa-gem"></i>
+      <span>Sommelier Curated Pairings</span><i class="fas fa-gem"></i>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <section class="section-padding-lux bg-black">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="intro-media reveal-left">
+            <img class="img-main" src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=900&q=80" alt="Signature dish">
+            <div class="img-frame reveal-scale delay-1"></div>
+            <div class="img-badge">
+              <span class="num" id="yearCounter">12</span>
+              <span class="lbl">Years of<br>Mastery</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">Our Story</div>
+          <h2 class="section-title reveal">A Table Set for <span class="text-gold">the Senses</span></h2>
+          <div class="gold-ornament justify-content-start reveal"><span></span><i class="fas fa-star"></i><span></span></div>
+          <p class="section-subtitle text-start reveal" style="margin-left:0;">Born from a passion for perfection, AURELIA celebrates the craft of slow cooking and rare ingredients. Each plate is composed like a movement — texture, aroma and colour in perfect harmony.</p>
+          <p class="text-muted-light reveal" style="color:var(--muted);max-width:560px;">Our chef de cuisine works with local farms and foragers to source produce at its peak, letting every season write its own chapter on the menu.</p>
+          <div class="intro-points mt-4">
+            <div class="row g-4">
+              <div class="col-sm-6 reveal delay-1">
+                <div class="point-card"><i class="fas fa-leaf"></i><div><h6>Seasonal Menus</h6><p>Changed nightly by the seasons</p></div></div>
+              </div>
+              <div class="col-sm-6 reveal delay-2">
+                <div class="point-card"><i class="fas fa-wine-glass-alt"></i><div><h6>Rare Cellar</h6><p>2,000+ curated labels</p></div></div>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn-ghost mt-4 reveal delay-3">Discover Our Story <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Dishes -->
+  <section class="section-padding-lux" style="background:var(--dark-2);">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow reveal">Chef's Selection</div>
+        <h2 class="section-title reveal">Signature Creations</h2>
+        <div class="gold-ornament reveal"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80" alt="Scallop dish"><span class="dish-tag">First Course</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>Seared Scallop</h4><span class="dish-price">$32</span></div>
+              <p>Hand-dived scallop, brown butter, cauliflower velouté, caviar pearls</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal delay-1">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Beef dish"><span class="dish-tag">Main Course</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>Wagyu Filet</h4><span class="dish-price">$78</span></div>
+              <p>Japanese A5 wagyu, black truffle jus, confit potato, smoked bone marrow</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="dish-card reveal delay-2">
+            <div class="dish-img"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Dessert"><span class="dish-tag">Dessert</span></div>
+            <div class="dish-body">
+              <div class="d-flex justify-content-between align-items-start"><h4>Valrhona Soufflé</h4><span class="dish-price">$24</span></div>
+              <p>Dark chocolate soufflé, 24k gold leaf, crème fraîche, salted caramel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="menu.html" class="btn-outline-gold">View Full Menu <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Parallax -->
+  <section class="stats-lux parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80');">
+    <div class="stats-overlay"></div>
+    <div class="container stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-num" data-count="12">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-item reveal delay-1">
+        <span class="stat-num" data-count="48">0</span>
+        <span class="stat-label">Culinary Awards</span>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <span class="stat-num" data-count="120">0</span><span class="stat-suffix">k</span>
+        <span class="stat-label">Guests Served</span>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <span class="stat-num" data-count="2000">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Wine Labels</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview -->
+  <section class="section-padding-lux bg-black">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="section-eyebrow reveal">Tasting Menu</div>
+          <h2 class="section-title reveal">Tonight's Degustation</h2>
+          <div class="gold-ornament justify-content-start reveal"><span></span><i class="fas fa-star"></i><span></span></div>
+        </div>
+        <div class="col-lg-6 text-lg-end mt-4 mt-lg-0">
+          <a href="menu.html" class="btn-ghost reveal">Full Menu <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="tasting-list">
+        <div class="tasting-item reveal">
+          <div class="t-num">01</div>
+          <div class="t-name"><h4>Oysters, Champagne Mignonette</h4><p>Gillardeau oysters · kumquat · caviar</p></div>
+          <div class="t-line"></div>
+          <div class="t-price">$28</div>
+        </div>
+        <div class="tasting-item reveal delay-1">
+          <div class="t-num">02</div>
+          <div class="t-name"><h4>Foie Gras & Peach</h4><p>Sauternes glaze · brioche · elderflower</p></div>
+          <div class="t-line"></div>
+          <div class="t-price">$36</div>
+        </div>
+        <div class="tasting-item reveal delay-2">
+          <div class="t-num">03</div>
+          <div class="t-name"><h4>Dover Sole Meunière</h4><p>Brown butter · capers · lemon confit</p></div>
+          <div class="t-line"></div>
+          <div class="t-price">$58</div>
+        </div>
+        <div class="tasting-item reveal delay-3">
+          <div class="t-num">04</div>
+          <div class="t-name"><h4>Rack of Lamb</h4><p>Herb crust · smoked eggplant · rosemary jus</p></div>
+          <div class="t-line"></div>
+          <div class="t-price">$64</div>
+        </div>
+        <div class="tasting-item reveal delay-4">
+          <div class="t-num">05</div>
+          <div class="t-name"><h4>Pre-Dessert & Petit Fours</h4><p>Palate cleanser · handcrafted sweets</p></div>
+          <div class="t-line"></div>
+          <div class="t-price">$18</div>
+        </div>
+      </div>
+      <div class="text-center mt-4 reveal">
+        <span class="text-muted small">Five courses · $198 per guest · Wine pairing $95</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding-lux" style="background:var(--dark-2);">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow reveal">Guest Voices</div>
+        <h2 class="section-title reveal">Words of Praise</h2>
+        <div class="gold-ornament reveal"><span></span><i class="fas fa-star"></i><span></span></div>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card reveal">
+              <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+              <p class="t-text">"The most unforgettable evening of our lives. Every course was a work of art — the service, the wine, the ambience. AURELIA has redefined what fine dining means to us."</p>
+              <div class="t-author"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Isabella & James Whitmore</h6><small>Anniversary Dinner</small></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card reveal">
+              <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+              <p class="t-text">"As a sommelier I am rarely impressed, yet their cellar list left me speechless. The pairing flight was flawless from first sip to final dessert."</p>
+              <div class="t-author"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Marcus Bennett</h6><small>Wine Connoisseur</small></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card reveal">
+              <div class="t-quote"><i class="fas fa-quote-left"></i></div>
+              <p class="t-text">"We hosted our private chef's table dinner for twelve clients here. Flawless execution, breathtaking presentation and a team that anticipated every need. Simply world-class."</p>
+              <div class="t-author"><span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><h6>Victoria Laurent</h6><small>Private Event Host</small></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev t-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control-next t-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Strip -->
+  <section class="gallery-strip-lux">
+    <div class="g-strip-item reveal"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Dining room"></div>
+    <div class="g-strip-item reveal delay-1"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80" alt="Interior"></div>
+    <div class="g-strip-item reveal delay-2"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Dish"></div>
+    <div class="g-strip-item reveal delay-3"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=80" alt="Plating"></div>
+    <div class="g-strip-item reveal delay-4"><img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=700&q=80" alt="Dessert"></div>
+    <div class="g-strip-item reveal delay-4"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=700&q=80" alt="Chef"></div>
+  </section>
+
+  <!-- Reservation CTA -->
+  <section class="cta-lux parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1600&q=80');">
+    <div class="cta-overlay"></div>
+    <div class="container text-center cta-content">
+      <div class="section-eyebrow reveal" style="justify-content:center;">Reservations</div>
+      <h2 class="cta-title reveal">Reserve Your Evening</h2>
+      <p class="cta-sub reveal delay-1">Tables are released 30 days in advance. For parties over eight, contact our private dining team.</p>
+      <div class="cta-actions reveal delay-2">
+        <a href="reservation.html" class="btn-gold">Book a Table <i class="fas fa-calendar-check"></i></a>
+        <a href="tel:+12125550199" class="btn-outline-gold ms-lg-3 mt-3 mt-lg-0"><i class="fas fa-phone-alt"></i> (212) 555-0199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">AUR<span>E</span>LIA</div>
+          <p class="mt-3">Fine dining & lounge. An evening at AURELIA is an immersion into flavour, light and quiet luxury.</p>
+          <div class="social-f mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 12 Silvercrest Avenue, New York, NY 10013</li>
+            <li><i class="fas fa-phone-alt"></i> (212) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@aurelia.dining</li>
+            <li><i class="fas fa-clock"></i> Tue–Sun · 5:30pm – 11:00pm</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon · Closed</li>
+            <li>Tue – Thu · 5:30pm – 10:30pm</li>
+            <li>Fri – Sat · 5:00pm – 11:30pm</li>
+            <li>Sun · 5:00pm – 9:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Aurelia Fine Dining. Crafted by OrbonTech.</p>
+        <p class="text-gold" style="letter-spacing:.18em;">Bon Appétit <i class="fas fa-heart" style="font-size:.7rem;"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

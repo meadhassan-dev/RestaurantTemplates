@@ -1,0 +1,126 @@
+.page-banner-chinese {
+  background: linear-gradient(135deg, #111 0%, #8B0000 50%, #111 100%);
+  padding: 60px 0 50px;
+  text-align: center;
+  position: relative;
+}
+
+.page-banner-chinese h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  color: #FFD700;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  letter-spacing: 4px;
+}
+
+.page-banner-chinese p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 4px;
+}
+
+.reservation-info-chinese {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.reservation-info-chinese .res-img {
+  border: 5px solid #111;
+}
+
+.reservation-info-chinese .section-title {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.reservation-info-chinese .section-divider {
+  margin: 0 0 30px;
+}
+
+.reservation-info-chinese .info-box {
+  background: #f9f5f0;
+  padding: 20px;
+  border: 1px solid #e0d5c0;
+  margin-bottom: 20px;
+}
+
+.reservation-info-chinese .info-box i {
+  font-size: 1.8rem;
+  color: #CC0000;
+  margin-bottom: 10px;
+}
+
+.reservation-info-chinese .info-box h6 {
+  font-family: 'Cinzel', serif;
+  color: #8B0000;
+}
+
+.reservation-info-chinese .info-box p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.reservation-form-chinese {
+  padding: 80px 0;
+  background: #f9f5f0;
+}
+
+.reservation-form-chinese form {
+  background: #fff;
+  padding: 50px;
+  border: 1px solid #e0d5c0;
+}
+
+.reservation-form-chinese h3 {
+  font-family: 'Cinzel', serif;
+  color: #8B0000;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.reservation-form-chinese .form-label {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: #8B0000;
+  font-size: 0.9rem;
+}
+
+.reservation-form-chinese .form-control {
+  border-radius: 0;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+.reservation-form-chinese .form-control:focus {
+  border-color: #CC0000;
+  box-shadow: none;
+}
+
+.reservation-form-chinese .btn-submit {
+  background: #CC0000;
+  color: #FFD700;
+  border: 2px solid #8B0000;
+  padding: 14px 50px;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0;
+  width: 100%;
+}
+
+.reservation-form-chinese .btn-submit:hover {
+  background: #8B0000;
+}
+
+@media (max-width: 768px) {
+  .page-banner-chinese h1 {
+    font-size: 2.2rem;
+  }
+  .reservation-form-chinese form {
+    padding: 25px;
+  }
+}

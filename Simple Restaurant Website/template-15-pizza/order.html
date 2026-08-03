@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online - Dough & Fire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="order.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span><i class="fas fa-phone-alt text-gold"></i> Call us: (212) 555-0199</span>
+      <div class="top-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light pizza-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Dough & Fire</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav15">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav15">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Order Online</li>
+        </ol>
+      </nav>
+      <h1>Order Online</h1>
+      <p class="lead">Handcrafted pizza, wood-fired to perfection</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="classics">Classics</button>
+        <button class="filter-btn" data-category="signature">Signature</button>
+        <button class="filter-btn" data-category="gourmet">Gourmet</button>
+        <button class="filter-btn" data-category="calzones">Calzones</button>
+        <button class="filter-btn" data-category="sides">Sides</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="row g-4" id="menuGrid"></div>
+
+      <div class="no-results d-none" id="noResults">
+        <i class="fas fa-search"></i>
+        <h3>No items found</h3>
+        <p>Try a different category.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5>Dough & Fire</h5>
+          <p>Artisan pizza made with love, fire, and the finest ingredients. Every slice tells a story.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="menu.html">Our Menu</a></li>
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 321 Firewood Ave, New York</li>
+            <li class="mb-2"><i class="fas fa-phone me-2"></i> (212) 555-0199</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> hello@doughandfire.com</li>
+            <li class="mb-2"><i class="fas fa-clock me-2"></i> Mon-Sun: 11AM - 11PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 OrbonTech. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    const menuItems = [
+      { id: 1, name: "Margherita", category: "classics", price: 14.99, description: "San Marzano tomatoes, fresh mozzarella, basil, olive oil", image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80", popular: true },
+      { id: 2, name: "Pepperoni", category: "classics", price: 16.99, description: "Classic pepperoni, mozzarella, house tomato sauce", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80", popular: true },
+      { id: 3, name: "Four Cheese", category: "classics", price: 17.99, description: "Mozzarella, gorgonzola, parmesan, pecorino on white base", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" },
+      { id: 4, name: "Truffle Mushroom", category: "signature", price: 21.99, description: "Wild mushrooms, truffle cream, fontina, fresh thyme", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80", popular: true },
+      { id: 5, name: "Prosciutto & Arugula", category: "signature", price: 22.99, description: "San Daniele prosciutto, arugula, shaved parmesan, lemon zest", image: "https://images.unsplash.com/photo-1593504049359-74330189a345?w=600&q=80" },
+      { id: 6, name: "BBQ Chicken", category: "signature", price: 19.99, description: "Grilled chicken, smoky BBQ sauce, red onion, cilantro", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" },
+      { id: 7, name: "Diavola", category: "gourmet", price: 18.99, description: "Spicy salami, nduja, chili flakes, roasted peppers", image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80", spicy: true },
+      { id: 8, name: "Quattro Stagioni", category: "gourmet", price: 23.99, description: "Artichokes, mushrooms, ham, olives, egg", image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" },
+      { id: 9, name: "Classic Calzone", category: "calzones", price: 16.99, description: "Ricotta, mozzarella, ham, served with marinara", image: "https://images.unsplash.com/photo-1536964549204-cce9eab227bd?w=600&q=80" },
+      { id: 10, name: "Garlic Knots", category: "sides", price: 6.99, description: "Freshly baked garlic knots with marinara sauce", image: "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&q=80" },
+      { id: 11, name: "Tiramisu", category: "desserts", price: 9.99, description: "Classic Italian tiramisu with mascarpone and espresso", image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80", popular: true },
+      { id: 12, name: "Italian Soda", category: "drinks", price: 4.99, description: "Refreshing Italian soda in assorted flavors", image: "https://images.unsplash.com/photo-1558857563-b37103387348?w=600&q=80" }
+    ];
+
+    const grid = document.getElementById('menuGrid');
+    const noResults = document.getElementById('noResults');
+
+    function renderMenu(category) {
+      const filtered = category === 'all' ? menuItems : menuItems.filter(item => item.category === category);
+      if (filtered.length === 0) { grid.innerHTML = ''; noResults.classList.remove('d-none'); return; }
+      noResults.classList.add('d-none');
+      grid.innerHTML = filtered.map(item => `
+        <div class="col-md-6 col-lg-4">
+          <div class="menu-card">
+            <div class="card-img-wrapper">
+              <img src="${item.image}" class="card-img-top" alt="${item.name}">
+              ${item.popular ? '<span class="popular-badge"><i class="fas fa-fire"></i> Popular</span>' : ''}
+              ${item.spicy ? '<span class="spicy-badge"><i class="fas fa-pepper-hot"></i> Spicy</span>' : ''}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">${item.description}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="card-price">$${item.price.toFixed(2)}</span>
+                <button class="btn btn-order" onclick="addToCart(${item.id})"><i class="fas fa-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addToCart(id) {
+      const item = menuItems.find(i => i.id === id);
+      if (!item) return;
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const existing = cart.find(c => c.id === id);
+      if (existing) { existing.qty += 1; } else { cart.push({ ...item, qty: 1 }); }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+
+    function updateCartCount() {
+      document.getElementById('cartCount').textContent = (JSON.parse(localStorage.getItem('cart')) || []).reduce((s, c) => s + c.qty, 0);
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderMenu(btn.dataset.category);
+      });
+    });
+
+    renderMenu('all');
+    updateCartCount();
+  </script>
+</body>
+</html>

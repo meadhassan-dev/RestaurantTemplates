@@ -1,0 +1,67 @@
+.page-hero {
+  min-height: 50vh;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid var(--rosegold);
+  padding-top: 100px;
+}
+
+.page-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.page-hero-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.hero-overline {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--rosegold);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.reservation-card {
+  background: var(--white);
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.private-card {
+  background: var(--lavender);
+  padding: 35px 20px;
+  border-left: 4px solid var(--rosegold);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.private-card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  border-color: var(--rosegold);
+  box-shadow: none;
+}
+
+.form-select { border-radius: 0; }
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.5rem; }
+  .reservation-card { padding: 25px; }
+}

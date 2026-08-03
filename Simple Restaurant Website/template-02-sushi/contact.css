@@ -1,0 +1,79 @@
+.page-hero-contact-sushi {
+  background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600') center/cover no-repeat;
+  padding: 180px 0 100px;
+  color: var(--white);
+}
+
+.page-hero-contact-sushi h1 {
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+
+.page-hero-contact-sushi p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.contact-form-sushi .form-control {
+  border-radius: 0;
+  border: 2px solid #ddd;
+  padding: 14px 16px;
+  background: var(--light-gray);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form-sushi .form-control:focus {
+  border-color: var(--coral);
+  box-shadow: none;
+}
+
+.contact-info-sushi {
+  padding-left: 20px;
+}
+
+.contact-item-sushi {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.contact-item-sushi i {
+  font-size: 1.5rem;
+  color: var(--coral);
+  width: 40px;
+  margin-top: 5px;
+}
+
+.contact-item-sushi h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  color: var(--black);
+}
+
+.contact-item-sushi p {
+  color: #888;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.map-section-sushi {
+  margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-contact-sushi {
+    padding: 150px 0 70px;
+  }
+  .page-hero-contact-sushi h1 {
+    font-size: 3.5rem;
+  }
+  .contact-info-sushi {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}

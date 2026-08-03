@@ -1,0 +1,45 @@
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #388E3C 100%);
+  padding-top: 100px;
+}
+
+.page-hero-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.page-hero-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 10px;
+}
+
+.contact-info i {
+  width: 40px;
+  text-align: center;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control {
+  border-radius: 25px;
+  padding: 12px 20px;
+  border: 2px solid #eee;
+}
+
+.form-control:focus {
+  border-color: var(--green);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.2rem; }
+}

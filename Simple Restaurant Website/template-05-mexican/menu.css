@@ -1,0 +1,24 @@
+.page-hero-mex-menu {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.85), rgba(220, 20, 60, 0.65), rgba(255, 140, 0, 0.55)), url('https://images.unsplash.com/photo-1613514785940-daed07799d9b?w=1600') center/cover no-repeat;
+  padding: 160px 0 80px;
+  color: var(--white);
+}
+
+.page-hero-mex-menu h1 {
+  font-size: 5rem;
+  color: var(--yellow);
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.page-hero-mex-menu p {
+  color: rgba(255,255,255,0.9);
+}
+
+@media (max-width: 768px) {
+  .page-hero-mex-menu {
+    padding: 130px 0 60px;
+  }
+  .page-hero-mex-menu h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,39 @@
+.page-hero-gallery-mex {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.85), rgba(220, 20, 60, 0.65), rgba(255, 140, 0, 0.55)), url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1600') center/cover no-repeat;
+  padding: 160px 0 80px;
+  color: var(--white);
+}
+
+.page-hero-gallery-mex h1 {
+  font-size: 5rem;
+  color: var(--yellow);
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.page-hero-gallery-mex p {
+  color: rgba(255,255,255,0.9);
+}
+
+.gallery-img-mex {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.gallery-img-mex:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .page-hero-gallery-mex {
+    padding: 130px 0 60px;
+  }
+  .page-hero-gallery-mex h1 {
+    font-size: 3rem;
+  }
+  .gallery-img-mex {
+    height: 200px;
+  }
+}

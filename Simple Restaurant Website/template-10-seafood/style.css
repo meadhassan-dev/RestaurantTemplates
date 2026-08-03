@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #333;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000080;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: #FF7F50;
+  margin: 0 auto 40px;
+}
+
+.navbar-seafood {
+  background: transparent !important;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-seafood.scrolled {
+  background: #000080 !important;
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.navbar-seafood .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #fff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-seafood .navbar-brand span {
+  color: #FF7F50;
+}
+
+.navbar-seafood .nav-link {
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s;
+}
+
+.navbar-seafood .nav-link:hover {
+  color: #FF7F50 !important;
+}
+
+.hero-seafood {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-seafood::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1600') center/cover no-repeat;
+  filter: brightness(0.45);
+}
+
+.hero-seafood .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-seafood h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  letter-spacing: 3px;
+}
+
+.hero-seafood h1 span {
+  color: #FF7F50;
+}
+
+.hero-seafood .tagline {
+  font-family: 'Merriweather', serif;
+  font-size: 1.3rem;
+  color: #87CEEB;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.hero-seafood .btn-coral {
+  background: #FF7F50;
+  color: #fff;
+  border: none;
+  padding: 14px 45px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.hero-seafood .btn-coral:hover {
+  background: #fff;
+  color: #000080;
+  transform: scale(1.05);
+}
+
+.wave-divider {
+  position: relative;
+  z-index: 3;
+  margin-top: -1px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menu-seafood {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.menu-item {
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,128,0.06);
+  transition: all 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,128,0.12);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-item .item-body {
+  padding: 20px;
+}
+
+.menu-item .item-body h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #000080;
+  font-size: 1.2rem;
+}
+
+.menu-item .item-body .price {
+  font-family: 'Poppins', sans-serif;
+  color: #FF7F50;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.menu-item .item-body p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.menu-item .item-body .badge {
+  background: #000080;
+  color: #FF7F50;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-seafood {
+  padding: 80px 0;
+  background: #f0f8ff;
+}
+
+.about-seafood img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-seafood h3 {
+  font-size: 2.2rem;
+  color: #000080;
+}
+
+.about-seafood .feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.about-seafood .feature i {
+  color: #FF7F50;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.gallery-seafood {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,128,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay i {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.contact-seafood {
+  padding: 80px 0;
+  background: #f0f8ff;
+}
+
+.contact-seafood form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,128,0.06);
+}
+
+.contact-seafood .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px 20px;
+}
+
+.contact-seafood .form-control:focus {
+  border-color: #FF7F50;
+  box-shadow: 0 0 0 0.2rem rgba(255,127,80,0.25);
+}
+
+.contact-seafood .btn-submit {
+  background: #FF7F50;
+  color: #fff;
+  border: 2px solid #000080;
+  padding: 12px 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.contact-seafood .btn-submit:hover {
+  background: #000080;
+  color: #FF7F50;
+  border-color: #FF7F50;
+}
+
+.footer-seafood {
+  background: #000080;
+  color: #87CEEB;
+  padding: 60px 0 30px;
+}
+
+.footer-seafood h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #FF7F50;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.footer-seafood a {
+  color: #87CEEB;
+  text-decoration: none;
+}
+
+.footer-seafood a:hover {
+  color: #FF7F50;
+}
+
+.footer-seafood .social i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: all 0.3s;
+}
+
+.footer-seafood .social i:hover {
+  color: #FF7F50;
+  transform: scale(1.2);
+}
+
+.footer-seafood .copyright {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: #6ba3c7;
+}
+
+@media (max-width: 991px) {
+  .navbar-seafood {
+    background: #000080 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-seafood h1 {
+    font-size: 2.8rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .contact-seafood form {
+    padding: 20px;
+  }
+}

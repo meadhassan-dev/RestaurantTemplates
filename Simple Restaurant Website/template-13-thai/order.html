@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Online - Bangkok Bites</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="order.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-pepper-hot"></i> Bangkok Bites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav13">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav13">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Order Online</li>
+        </ol>
+      </nav>
+      <h1>Order Online</h1>
+      <p class="lead">Fresh Thai flavors delivered to your door</p>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="py-5">
+    <div class="container">
+      <!-- Category Filter -->
+      <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="appetizers">Appetizers</button>
+        <button class="filter-btn" data-category="curries">Curries</button>
+        <button class="filter-btn" data-category="noodles">Noodles</button>
+        <button class="filter-btn" data-category="rice">Rice</button>
+        <button class="filter-btn" data-category="soups">Soups</button>
+        <button class="filter-btn" data-category="drinks">Drinks</button>
+        <button class="filter-btn" data-category="desserts">Desserts</button>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="row g-4" id="menuGrid">
+        <!-- Items populated by JS -->
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results d-none" id="noResults">
+        <i class="fas fa-search"></i>
+        <h3>No items found</h3>
+        <p>Try a different category or search term.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5>Bangkok Bites</h5>
+          <p>Bringing the vibrant flavors of Thailand to your table. Authentic recipes, fresh ingredients, unforgettable taste.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="menu.html">Our Menu</a></li>
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="reservation.html">Reservations</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5>Contact Info</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 456 Spice Road, Bangkok District</li>
+            <li class="mb-2"><i class="fas fa-phone me-2"></i> (555) 789-0123</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i> hello@bangkokbites.com</li>
+            <li class="mb-2"><i class="fas fa-clock me-2"></i> Tue-Sun: 11AM - 10PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 OrbonTech. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    const menuItems = [
+      { id: 1, name: "Spring Rolls", category: "appetizers", price: 8.99, description: "Crispy rolls with vegetables, served with sweet chili sauce", image: "https://images.unsplash.com/photo-1606525437679-058d8dbf5e90?w=600&q=80", popular: false },
+      { id: 2, name: "Satay Chicken", category: "appetizers", price: 12.99, description: "Grilled chicken skewers with peanut sauce", image: "https://images.unsplash.com/photo-1529563021893-cc83c992d75d?w=600&q=80", popular: true },
+      { id: 3, name: "Tom Yum Soup", category: "soups", price: 11.99, description: "Spicy and sour soup with shrimp, mushrooms, and lemongrass", image: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80", spicy: true, popular: true },
+      { id: 4, name: "Green Curry", category: "curries", price: 15.99, description: "Coconut milk curry with bamboo shoots, Thai basil, and your choice of protein", image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80", spicy: true },
+      { id: 5, name: "Massaman Curry", category: "curries", price: 16.99, description: "Rich and mild curry with potatoes, peanuts, and cinnamon", image: "https://images.unsplash.com/photo-1562565651-7d490b16d637?w=600&q=80" },
+      { id: 6, name: "Pad Thai", category: "noodles", price: 14.99, description: "Stir-fried rice noodles with shrimp, tofu, peanuts, and tamarind sauce", image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&q=80", popular: true },
+      { id: 7, name: "Pad See Ew", category: "noodles", price: 14.99, description: "Stir-fried wide rice noodles with Chinese broccoli and egg", image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&q=80" },
+      { id: 8, name: "Khao Pad", category: "rice", price: 13.99, description: "Thai fried rice with egg, vegetables, and your choice of protein", image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80" },
+      { id: 9, name: "Pineapple Fried Rice", category: "rice", price: 15.99, description: "Fried rice served in a pineapple half with cashews and raisins", image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80" },
+      { id: 10, name: "Mango Sticky Rice", category: "desserts", price: 9.99, description: "Sweet coconut sticky rice with fresh mango slices", image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80", popular: true },
+      { id: 11, name: "Thai Iced Tea", category: "drinks", price: 4.99, description: "Classic Thai tea with condensed milk over ice", image: "https://images.unsplash.com/photo-1558857563-b37103387348?w=600&q=80" },
+      { id: 12, name: "Coconut Ice Cream", category: "desserts", price: 7.99, description: "Creamy coconut ice cream topped with peanuts and corn", image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" }
+    ];
+
+    const grid = document.getElementById('menuGrid');
+    const noResults = document.getElementById('noResults');
+    let currentCategory = 'all';
+
+    function renderMenu(category) {
+      const filtered = category === 'all' ? menuItems : menuItems.filter(item => item.category === category);
+      
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        noResults.classList.remove('d-none');
+        return;
+      }
+
+      noResults.classList.add('d-none');
+      grid.innerHTML = filtered.map(item => `
+        <div class="col-md-6 col-lg-4">
+          <div class="menu-card">
+            <div class="card-img-wrapper">
+              <img src="${item.image}" class="card-img-top" alt="${item.name}">
+              ${item.spicy ? '<span class="spicy-badge"><i class="fas fa-pepper-hot"></i> Spicy</span>' : ''}
+              ${item.popular ? '<span class="popular-badge"><i class="fas fa-fire"></i> Popular</span>' : ''}
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">${item.description}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="card-price">$${item.price.toFixed(2)}</span>
+                <button class="btn btn-order" onclick="addToCart(${item.id})">
+                  <i class="fas fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addToCart(id) {
+      const item = menuItems.find(i => i.id === id);
+      if (!item) return;
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const existing = cart.find(c => c.id === id);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ ...item, qty: 1 });
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+    }
+
+    function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      document.getElementById('cartCount').textContent = cart.reduce((sum, c) => sum + c.qty, 0);
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.category;
+        renderMenu(currentCategory);
+      });
+    });
+
+    renderMenu('all');
+    updateCartCount();
+  </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+.page-banner-steak {
+  background: #1a0f0a;
+  padding: 100px 0 50px;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid #3E2723;
+}
+
+.page-banner-steak::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.page-banner-steak h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  color: #FFBF00;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  letter-spacing: 6px;
+  position: relative;
+}
+
+.page-banner-steak p {
+  color: #FFFDD0;
+  font-size: 1.2rem;
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  position: relative;
+}
+
+.contact-info-steak {
+  padding: 80px 0;
+  background: #1a0f0a;
+}
+
+.contact-info-steak .section-title {
+  text-align: left;
+}
+
+.contact-info-steak .section-divider {
+  margin: 0 0 30px;
+}
+
+.contact-info-steak form {
+  background: #2a1a10;
+  padding: 40px;
+  border: 1px solid #3E2723;
+}
+
+.contact-info-steak .form-control {
+  border-radius: 0;
+  border: 1px solid #3E2723;
+  padding: 14px;
+  background: #1a0f0a;
+  color: #FFFDD0;
+}
+
+.contact-info-steak .form-control::placeholder {
+  color: #8b7355;
+}
+
+.contact-info-steak .form-control:focus {
+  border-color: #FFBF00;
+  box-shadow: 0 0 0 0.2rem rgba(255,191,0,0.15);
+  background: #1a0f0a;
+  color: #FFFDD0;
+}
+
+.contact-info-steak .btn-submit {
+  background: #FFBF00;
+  color: #1a0f0a;
+  border: none;
+  padding: 15px 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.contact-info-steak .btn-submit:hover {
+  background: #FFFDD0;
+  color: #3E2723;
+}
+
+.contact-details-card {
+  background: #2a1a10;
+  padding: 40px 30px;
+  border: 1px solid #3E2723;
+}
+
+.contact-details-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #FFBF00;
+  margin-bottom: 30px;
+}
+
+.contact-details-card .detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.contact-details-card .detail i {
+  color: #FFBF00;
+  font-size: 1.5rem;
+  min-width: 40px;
+  margin-top: 3px;
+}
+
+.contact-details-card .detail h6 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  color: #FFBF00;
+  margin-bottom: 3px;
+}
+
+.contact-details-card .detail p {
+  color: #b0997a;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.map-section-steak {
+  width: 100%;
+  height: 450px;
+}
+
+.map-section-steak iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .page-banner-steak h1 {
+    font-size: 3rem;
+  }
+  .contact-info-steak form {
+    padding: 20px;
+  }
+  .contact-details-card {
+    padding: 25px;
+  }
+  .map-section-steak {
+    height: 300px;
+  }
+}

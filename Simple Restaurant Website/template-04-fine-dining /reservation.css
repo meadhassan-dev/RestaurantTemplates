@@ -1,0 +1,65 @@
+.page-hero-res-fine {
+  background: linear-gradient(rgba(43, 15, 58, 0.85), rgba(43, 15, 58, 0.85)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600') center/cover no-repeat;
+  padding: 120px 0 80px;
+}
+
+.page-hero-res-fine h1 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.bg-beige {
+  background: var(--beige);
+}
+
+.reservation-form-fine-wrapper {
+  background: var(--dark-purple);
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(197, 165, 90, 0.2);
+}
+
+.form-label-fine {
+  color: var(--champagne);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.reservation-intro-fine p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.res-info-card-fine {
+  background: var(--white);
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  height: 100%;
+  border: 1px solid rgba(197, 165, 90, 0.15);
+}
+
+.res-info-card-fine i {
+  color: var(--gold);
+}
+
+.res-info-card-fine h5 {
+  color: var(--dark-purple);
+  margin-bottom: 12px;
+}
+
+.res-info-card-fine p {
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .page-hero-res-fine h1 {
+    font-size: 3rem;
+  }
+  .reservation-form-fine-wrapper {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,28 @@
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1600') center/cover;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid var(--amber);
+}
+
+.page-hero-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 5rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+}
+
+.page-hero-subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 3rem; }
+}

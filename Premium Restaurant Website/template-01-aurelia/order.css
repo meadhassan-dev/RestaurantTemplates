@@ -1,0 +1,44 @@
+/* ============================================================
+   ORDER PAGE
+   ============================================================ */
+.order-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 40px; }
+.filter-btn {
+  background: transparent; border: 1px solid rgba(201,169,110,.35); color: var(--cream);
+  font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; padding: 10px 20px;
+  transition: all .4s var(--ease); border-radius: 2px;
+}
+.filter-btn:hover { border-color: var(--gold); color: var(--gold); }
+.filter-btn.active { background: linear-gradient(135deg, var(--gold-light), var(--gold-dark)); color: var(--black); border-color: transparent; font-weight: 600; }
+.order-search { position: relative; }
+.order-search i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: .85rem; }
+.order-search .form-control {
+  padding-left: 44px; min-width: 240px;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(201,169,110,.25);
+  color: var(--cream); border-radius: 2px; padding-top: 12px; padding-bottom: 12px;
+  transition: all .35s var(--ease);
+}
+.order-search .form-control:focus { background: rgba(255,255,255,.06); border-color: var(--gold); color: var(--cream); box-shadow: 0 0 0 3px rgba(201,169,110,.12); }
+.order-search .form-control::placeholder { color: rgba(168,159,143,.5); }
+
+.order-card {
+  background: var(--dark-2); border: 1px solid rgba(201,169,110,.16); height: 100%;
+  overflow: hidden; border-radius: 3px; transition: transform .6s var(--ease), box-shadow .6s, border-color .6s;
+}
+.order-card:hover { transform: translateY(-8px); box-shadow: 0 26px 60px rgba(0,0,0,.5); border-color: rgba(201,169,110,.45); }
+.oc-img { position: relative; overflow: hidden; aspect-ratio: 16/11; }
+.oc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.1s var(--ease); }
+.order-card:hover .oc-img img { transform: scale(1.12); }
+.oc-tag {
+  position: absolute; top: 14px; left: 14px; background: rgba(7,7,7,.85);
+  color: var(--gold); font-size: .58rem; letter-spacing: .22em; text-transform: uppercase;
+  padding: 7px 12px; border: 1px solid rgba(201,169,110,.4);
+}
+.oc-body { padding: 24px; }
+.oc-body h5 { font-size: 1.3rem; }
+.oc-body p { color: var(--muted); font-size: .88rem; margin: 8px 0 0; }
+.oc-price { font-family: var(--serif); font-size: 1.4rem; color: var(--gold); }
+.oc-btn { padding: 11px 20px; font-size: .68rem; }
+.oc-btn i { font-size: .75rem; }
+
+.no-results { text-align: center; padding: 70px 20px; color: var(--muted); }
+.no-results i { font-size: 3rem; color: var(--gold); opacity: .5; }

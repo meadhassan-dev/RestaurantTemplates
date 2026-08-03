@@ -1,0 +1,58 @@
+.page-banner-chinese {
+  background: linear-gradient(135deg, #111 0%, #8B0000 50%, #111 100%);
+  padding: 60px 0 50px;
+  text-align: center;
+  position: relative;
+}
+
+.page-banner-chinese h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3.5rem;
+  color: #FFD700;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  letter-spacing: 4px;
+}
+
+.page-banner-chinese p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 4px;
+}
+
+.menu-full-chinese {
+  padding: 80px 0;
+  background: #f9f5f0;
+}
+
+.menu-full-chinese .nav-tabs .nav-link {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: #8B0000;
+  border: none;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-full-chinese .nav-tabs .nav-link.active {
+  background: #CC0000;
+  color: #FFD700;
+  border-radius: 0;
+}
+
+.menu-full-chinese .menu-card .badge {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  border-radius: 0;
+  padding: 5px 12px;
+}
+
+@media (max-width: 768px) {
+  .page-banner-chinese h1 {
+    font-size: 2.2rem;
+  }
+  .page-banner-chinese p {
+    font-size: 1rem;
+  }
+}

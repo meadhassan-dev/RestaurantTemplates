@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — NOCTURNE</title>
+  <meta name="description" content="A visual walk through NOCTURNE — the dining room, the fire, the plates and the people.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Space+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body class="lock">
+
+  <div id="scrollProgress"></div>
+
+  <div class="preloader" id="preloader">
+    <div class="pl-brand">NOCT<span>U</span>RNE</div>
+    <div class="pl-diamond"><i class="fas fa-gem"></i></div>
+    <div class="pl-line"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg noc-nav solid" id="nocNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NOCT<span>U</span>RNE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nocNavbar" aria-controls="nocNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nocNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-noc" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-cart-btn" href="cart.html"><i class="fas fa-shopping-bag"></i><span id="cartCount">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="page-hero-noc">
+    <div class="container">
+      <div class="ph-grid">
+        <div class="ph-copy">
+          <div class="ph-breadcrumb reveal"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Gallery</span></div>
+          <h1 class="ph-title reveal delay-1">Moments in <span class="script">low light</span></h1>
+          <p class="ph-sub reveal delay-2">Between the first pour and the last petit four — a glimpse of the theatre that happens nightly in our dining room.</p>
+          <div class="ph-badge reveal delay-3">
+            <span class="pb-num">200+</span>
+            <span class="pb-note">memories captured & counting</span>
+          </div>
+        </div>
+        <div class="ph-media reveal-right">
+          <div class="ph-frame"></div>
+          <div class="ph-photo" data-parallax>
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1000&q=80" alt="NOCTURNE dining room at night">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="section-eyebrow reveal">The Gallery</div>
+      <h2 class="section-title reveal">Captured in <span class="script">candlelight</span></h2>
+      <p class="section-subtitle reveal">Click any image to view it up close.</p>
+
+      <div class="gallery-filter reveal" id="galleryFilter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="dishes">Dishes</button>
+        <button data-filter="interior">Interior</button>
+        <button data-filter="chefs">Chefs</button>
+        <button data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="row g-4 gallery-grid" id="galleryGrid">
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal" data-category="dishes" data-caption="Ember-roasted oysters, chive beurre blanc">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80" alt="Ember-roasted oysters">
+            <div class="g-overlay"><h5>Oysters from the Fire</h5><span>les huitres</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-1 g-tall" data-category="interior" data-caption="The NOCTURNE dining room after service">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="NOCTURNE dining room">
+            <div class="g-overlay"><h5>The Velvet Room</h5><span>la salle</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-2 g-wide" data-category="dishes" data-caption="Wagyu filet, bone marrow bordelaise">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Wagyu filet">
+            <div class="g-overlay"><h5>The Midnight Cut</h5><span>la viande</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal" data-category="chefs" data-caption="Chef Adrian at the live-fire pass">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80" alt="Chef at the pass">
+            <div class="g-overlay"><h5>At the Pass</h5><span>le chef</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-1 g-tall" data-category="drinks" data-caption="Midnight Martini — violet liqueur, black cherry">
+            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=800&q=80" alt="Midnight Martini">
+            <div class="g-overlay"><h5>Violet Hour</h5><span>le cocktail</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-2" data-category="interior" data-caption="Candlelit tables along the walnut bar">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Candlelit tables">
+            <div class="g-overlay"><h5>Candlelit Service</h5><span>les bougies</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal" data-category="dishes" data-caption="Noir chocolate dome, salted caramel core">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=80" alt="Noir chocolate dome">
+            <div class="g-overlay"><h5>The Noir Dome</h5><span>le dessert</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-1" data-category="chefs" data-caption="Plating precision in the kitchen">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&q=80" alt="Chef plating">
+            <div class="g-overlay"><h5>Final Touches</h5><span>le dressage</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-2" data-category="dishes" data-caption="Burrata & white peach, basil pearls">
+            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=800&q=80" alt="Burrata and white peach">
+            <div class="g-overlay"><h5>Peach & Cream</h5><span>la burrata</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal" data-category="drinks" data-caption="Nebbiolo riserva, poured by our sommeliers">
+            <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=800&q=80" alt="Red wine being poured">
+            <div class="g-overlay"><h5>From the Cellar</h5><span>la cave</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-1 g-wide" data-category="interior" data-caption="The private lounge beneath the stairs">
+            <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=800&q=80" alt="Private lounge">
+            <div class="g-overlay"><h5>The Hideaway</h5><span>le salon</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="g-item reveal delay-2" data-category="chefs" data-caption="Pastry chef finishing the tasting finale">
+            <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=800&q=80" alt="Pastry chef finishing a dessert">
+            <div class="g-overlay"><h5>The Finale</h5><span>le pâtissier</span></div>
+            <span class="g-zoom"><i class="fas fa-magnifying-glass-plus"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding-lux bg-ink">
+    <div class="container">
+      <div class="cta-panel-noc reveal-scale">
+        <div class="section-eyebrow reveal" style="justify-content:center;">Inspired?</div>
+        <h2 class="cta-title-noc reveal">See it <span class="script">in person</span></h2>
+        <p class="cta-sub reveal delay-1">The pictures are lovely — the real thing is better.</p>
+        <div class="cta-actions-noc reveal delay-2">
+          <a href="reservation.html" class="btn-noc">Reserve a Table <i class="fas fa-calendar-check"></i></a>
+          <a href="menu.html" class="btn-outline-noc">Browse the Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-noc">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4">
+          <div class="f-brand">NOCT<span>U</span>RNE</div>
+          <p class="mt-3">Modern gastronomy after dark. An evening at NOCTURNE is an immersion into flavour, light and midnight glamour.</p>
+          <div class="social-f-noc mt-4">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <h5>Visit Us</h5>
+          <ul class="f-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 88 Wabash Avenue, Chicago, IL 60611</li>
+            <li><i class="fas fa-phone-alt"></i> (312) 555-0199</li>
+            <li><i class="fas fa-envelope"></i> reserve@nocturne.dining</li>
+            <li><i class="fas fa-clock"></i> Wed–Sun · 5:30pm – 12:00am</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Hours</h5>
+          <ul>
+            <li>Mon – Tue · Closed</li>
+            <li>Wed – Thu · 5:30pm – 11:30pm</li>
+            <li>Fri – Sat · 5:00pm – 12:00am</li>
+            <li>Sun · 5:00pm – 10:30pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p>&copy; 2026 Nocturne Dining. Crafted by OrbonTech.</p>
+        <p class="text-grad-noc"><i class="fas fa-gem" style="font-size:.6rem;"></i> Bon Appétit</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <a href="cart.html" id="floatingCart" aria-label="View cart"><i class="fas fa-shopping-bag"></i><span class="fc-count" id="floatingCount">0</span></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

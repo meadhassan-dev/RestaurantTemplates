@@ -1,0 +1,236 @@
+.page-banner-steak {
+  background: #1a0f0a;
+  padding: 100px 0 50px;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid #3E2723;
+}
+
+.page-banner-steak::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1600') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.page-banner-steak h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 5rem;
+  color: #FFBF00;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  letter-spacing: 6px;
+  position: relative;
+}
+
+.page-banner-steak p {
+  color: #FFFDD0;
+  font-size: 1.2rem;
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  position: relative;
+}
+
+.about-story-steak {
+  padding: 80px 0;
+  background: #2a1a10;
+}
+
+.about-story-steak img {
+  width: 100%;
+  border: 4px solid #FFBF00;
+}
+
+.about-story-steak .section-title {
+  text-align: left;
+}
+
+.about-story-steak .section-divider {
+  margin: 0 0 30px;
+}
+
+.about-story-steak p {
+  color: #d4c5a9;
+}
+
+.about-story-steak .feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #d4c5a9;
+}
+
+.about-story-steak .feature i {
+  color: #FFBF00;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.timeline-steak {
+  padding: 80px 0;
+  background: #1a0f0a;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: #FFBF00;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-year {
+  background: #3E2723;
+  color: #FFBF00;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10px 25px;
+  min-width: 120px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  top: 0;
+  border: 1px solid #FFBF00;
+}
+
+.timeline-content {
+  background: #2a1a10;
+  padding: 25px;
+  width: calc(50% - 80px);
+  margin-top: 60px;
+  border: 1px solid #3E2723;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-content h5 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  color: #FFBF00;
+}
+
+.timeline-content p {
+  color: #b0997a;
+  margin: 0;
+}
+
+.values-steak {
+  padding: 80px 0;
+  background: #2a1a10;
+}
+
+.value-card {
+  text-align: center;
+  padding: 30px;
+  background: #1a0f0a;
+  border: 1px solid #3E2723;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.value-card:hover {
+  border-color: #FFBF00;
+  box-shadow: 0 8px 25px rgba(255,191,0,0.05);
+}
+
+.value-card i {
+  font-size: 2.5rem;
+  color: #FFBF00;
+  margin-bottom: 20px;
+}
+
+.value-card h5 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  color: #FFBF00;
+}
+
+.value-card p {
+  color: #b0997a;
+}
+
+.stats-steak {
+  padding: 60px 0;
+  background: #0d0805;
+  color: #fff;
+  border-top: 1px solid #3E2723;
+  border-bottom: 1px solid #3E2723;
+}
+
+.stat-item h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  color: #FFBF00;
+  font-weight: 700;
+}
+
+.stat-item p {
+  font-family: 'Source Serif 4', serif;
+  color: #8b7355;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .page-banner-steak h1 {
+    font-size: 3rem;
+  }
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-year {
+    left: 20px;
+    font-size: 1.2rem;
+    min-width: 90px;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    flex-direction: column;
+    padding-left: 60px;
+  }
+  .timeline-content {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    margin: 60px 0 0;
+  }
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+}

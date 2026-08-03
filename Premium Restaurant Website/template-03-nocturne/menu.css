@@ -1,0 +1,75 @@
+/* ============================================================
+   MENU PAGE
+   ============================================================ */
+.menu-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 34px; }
+.menu-tabs button {
+  padding: 12px 24px; background: rgba(185, 172, 255, .05);
+  border: 1px solid var(--line); color: var(--silver);
+  font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
+  cursor: pointer; border-radius: 12px; transition: all .35s var(--ease);
+}
+.menu-tabs button:hover { border-color: var(--violet); color: var(--violet-soft); transform: translateY(-2px); }
+.menu-tabs button.active { background: var(--grad); color: var(--white); border-color: transparent; box-shadow: 0 12px 26px rgba(124, 108, 240, .3); }
+
+.ac-price { margin-left: auto; font-family: var(--serif); font-size: .95rem; color: var(--magenta-soft); padding-left: 16px; white-space: nowrap; }
+
+.menu-container { margin-top: 44px; display: flex; flex-direction: column; gap: 34px; }
+.menu-category { display: flex; flex-direction: column; gap: 18px; }
+.menu-category-head { margin-top: 0; }
+.menu-category-head h3 {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--serif); font-size: 1.6rem; color: var(--white);
+  text-transform: uppercase; letter-spacing: .02em;
+  position: relative; padding-bottom: 10px;
+}
+.menu-category-head h3::after {
+  content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px;
+  border-radius: 2px; background: var(--grad);
+}
+.menu-category-head h3 i { color: var(--magenta); font-size: 1rem; }
+
+.menu-item {
+  position: relative;
+  display: flex; gap: 20px; align-items: flex-start;
+  background: var(--ink-3); border: 1px solid var(--line);
+  padding: 22px 26px; border-radius: 18px;
+  transition: transform .4s var(--ease), box-shadow .4s, border-color .4s;
+}
+.menu-item::before {
+  content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 3px; height: 0; background: var(--grad); border-radius: 0 3px 3px 0;
+  transition: height .4s var(--ease);
+}
+.menu-item:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(4, 7, 20, .5), 0 0 30px rgba(124, 108, 240, .1); border-color: var(--line-strong); }
+.menu-item:hover::before { height: 70%; }
+.mi-icon {
+  width: 50px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  background: var(--grad-soft); border: 1px solid var(--line); color: var(--violet-soft);
+  border-radius: 14px; font-size: 1.05rem;
+}
+.mi-main { flex: 1; min-width: 0; }
+.mi-top { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.mi-top h4 { font-size: 1.3rem; margin: 0; text-transform: uppercase; letter-spacing: .02em; }
+.mi-dots { flex: 1; border-bottom: 1px dotted rgba(185, 172, 255, .4); transform: translateY(-4px); min-width: 30px; }
+.mi-price { font-family: var(--serif); font-size: 1.3rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; white-space: nowrap; }
+.mi-main p { color: var(--muted); font-size: .88rem; margin: 6px 0 0; }
+.mi-tag {
+  display: inline-block; margin-top: 10px; padding: 5px 14px; border-radius: 10px;
+  background: rgba(228, 92, 142, .14); border: 1px solid rgba(228, 92, 142, .3);
+  color: var(--magenta-soft); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase;
+}
+
+.menu-note {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: var(--ink-3); border: 1px solid var(--line);
+  padding: 28px; border-radius: 20px; height: 100%;
+  transition: transform .4s var(--ease), box-shadow .4s;
+}
+.menu-note:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(4, 7, 20, .5), 0 0 30px rgba(124, 108, 240, .1); }
+.menu-note i {
+  font-size: 1.1rem; color: var(--white); background: var(--grad);
+  width: 54px; height: 54px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  border-radius: 16px; box-shadow: 0 12px 26px rgba(124, 108, 240, .3);
+}
+.menu-note h5 { font-size: 1.2rem; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .02em; }
+.menu-note p { color: var(--muted); font-size: .9rem; margin: 0; }

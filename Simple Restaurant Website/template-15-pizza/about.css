@@ -1,0 +1,94 @@
+.page-hero {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1600') center/cover;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4.5rem;
+  color: var(--white);
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+}
+
+.page-hero-subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  margin-top: 10px;
+}
+
+.philosophy-card-pizza {
+  background: var(--white);
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.philosophy-card-pizza:hover {
+  transform: translateY(-5px);
+}
+
+.philosophy-card-pizza h4 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.timeline-pizza {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.timeline-pizza::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--red);
+  border-radius: 3px;
+}
+
+.timeline-item-pizza {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-year-pizza {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 70px;
+  font-family: 'Fredoka One', cursive;
+  padding: 6px 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  z-index: 1;
+  border-radius: 20px;
+  color: var(--white);
+}
+
+.timeline-content-pizza {
+  background: #f8f8f8;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-left: 20px;
+  border-left: 3px solid var(--gold);
+}
+
+.timeline-content-pizza h5 {
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .page-hero-title { font-size: 2.8rem; }
+}

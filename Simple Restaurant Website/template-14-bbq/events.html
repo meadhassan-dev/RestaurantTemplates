@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Smokehouse BBQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bbq-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-fire"></i> SMOKEHOUSE BBQ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav14">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav14">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="page-hero-title">Events & Catering</h1>
+      <p class="page-hero-subtitle">Good BBQ, good music, good times.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-music text-amber"></i> Live Music Schedule</h2>
+      <p class="text-center text-muted mb-5">Every week, we bring the best local talent to our stage.</p>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="table-responsive">
+            <table class="table table-dark table-striped events-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Artist</th>
+                  <th>Genre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Thursday</td><td>7:00 PM</td><td>The Delta Blues Band</td><td>Blues</td></tr>
+                <tr><td>Friday</td><td>8:00 PM</td><td>Southern Roots</td><td>Country</td></tr>
+                <tr><td>Saturday</td><td>8:00 PM</td><td>Smoky & The Brisket Boys</td><td>Rockabilly</td></tr>
+                <tr><td>Sunday</td><td>5:00 PM</td><td>Acoustic BBQ Jam</td><td>Folk</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-amber-bg">
+    <div class="container">
+      <h2 class="section-title text-center"><i class="fas fa-utensils text-red"></i> Catering Services</h2>
+      <p class="text-center text-muted mb-5">Bring the smokehouse to your next event.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="catering-card">
+            <i class="fas fa-birthday-cake fa-3x text-red mb-3"></i>
+            <h4>Birthday Parties</h4>
+            <p class="text-muted">Full-service catering with our signature smoked meats, sides, and desserts. Customizable menus for any group size.</p>
+            <p class="fw-bold text-amber">Starting at $22/person</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="catering-card">
+            <i class="fas fa-briefcase fa-3x text-red mb-3"></i>
+            <h4>Corporate Events</h4>
+            <p class="text-muted">Impress your team with a Southern-style BBQ buffet. We handle everything from setup to cleanup.</p>
+            <p class="fw-bold text-amber">Starting at $28/person</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="catering-card">
+            <i class="fas fa-heart fa-3x text-red mb-3"></i>
+            <h4>Wedding BBQ</h4>
+            <p class="text-muted">Make your big day unforgettable with a wood-fired BBQ feast. Full bar and dessert options available.</p>
+            <p class="fw-bold text-amber">Custom Quote</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-dark text-white">
+    <div class="container">
+      <h2 class="section-title text-center text-white">Catering Packages</h2>
+      <p class="text-center text-muted mb-5">Choose the perfect spread for your event.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="package-card">
+            <h3 class="text-amber">The Tailgate</h3>
+            <p class="package-price">$18<small>/person</small></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-amber me-2"></i> Pulled Pork</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Smoked Sausage</li>
+              <li><i class="fas fa-check text-amber me-2"></i> 2 Sides</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Cornbread</li>
+              <li><i class="fas fa-check text-amber me-2"></i> BBQ Sauce</li>
+            </ul>
+            <button class="btn btn-red mt-3 w-100">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="package-card featured-package">
+            <span class="badge bg-amber text-dark">Most Popular</span>
+            <h3 class="text-amber">The Pit Master</h3>
+            <p class="package-price">$28<small>/person</small></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-amber me-2"></i> Pulled Pork</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Beef Brisket</li>
+              <li><i class="fas fa-check text-amber me-2"></i> St. Louis Ribs</li>
+              <li><i class="fas fa-check text-amber me-2"></i> 4 Sides</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Cornbread + Dessert</li>
+            </ul>
+            <button class="btn btn-amber mt-3 w-100">Book Now</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="package-card">
+            <h3 class="text-amber">The Feast</h3>
+            <p class="package-price">$38<small>/person</small></p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-amber me-2"></i> All Meats</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Burnt Ends</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Smoked Chicken</li>
+              <li><i class="fas fa-check text-amber me-2"></i> All Sides</li>
+              <li><i class="fas fa-check text-amber me-2"></i> Full Dessert Bar</li>
+            </ul>
+            <button class="btn btn-red mt-3 w-100">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <h2 class="section-title text-center">Host Your Event With Us</h2>
+      <p class="text-center text-muted mb-5">Our venue is perfect for private gatherings.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Event Space" class="img-fluid rounded-3 shadow">
+        </div>
+        <div class="col-lg-6">
+          <h4>Private Dining Room</h4>
+          <p class="text-muted">Our private dining room accommodates up to 50 guests, with a dedicated sound system, projector, and full bar. Perfect for corporate events, rehearsal dinners, and milestone celebrations.</p>
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-check-circle text-amber me-2"></i> <span>Capacity: Up to 50 guests</span>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-check-circle text-amber me-2"></i> <span>Full audio/visual setup</span>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <i class="fas fa-check-circle text-amber me-2"></i> <span>Customizable menus</span>
+          </div>
+          <div class="d-flex align-items-center mb-4">
+            <i class="fas fa-check-circle text-amber me-2"></i> <span>Full bar available</span>
+          </div>
+          <a href="contact.html" class="btn btn-red">Inquire About Booking</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5><i class="fas fa-fire text-amber"></i> SMOKEHOUSE BBQ</h5>
+          <p class="small text-muted">Low & slow since 2001.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i> 456 Hickory Ln, Nashville, TN</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2"></i> (615) 555-0157</p>
+          <p class="small mb-1"><i class="fas fa-envelope me-2"></i> info@smokehousebbq.com</p>
+          <p class="small"><i class="fas fa-clock me-2"></i> Tue-Sun 11am - 9pm</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3">
+      <p class="text-center small text-muted mb-0">&copy; 2026 OrbonTech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
